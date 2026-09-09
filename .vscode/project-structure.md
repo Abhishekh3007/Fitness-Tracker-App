@@ -15,6 +15,7 @@ This file maintains an up-to-date list of project files and structure.
     - 📄 `.next\types\validator.ts` (TypeScript)
       - *Imports:* `./routes.js`, `next/types.js`
 - 📁 `.vscode/`
+  - 📄 `.vscode\project-structure.md` (Markdown)
 - 📁 `public/`
   - 📄 `public\file.svg` (Unknown)
   - 📄 `public\globe.svg` (Unknown)
@@ -23,17 +24,200 @@ This file maintains an up-to-date list of project files and structure.
   - 📄 `public\window.svg` (Unknown)
 - 📁 `src/`
   - 📁 `src\app/`
+    - 📁 `src\app\(app)/`
+      - 📁 `src\app\(app)\calendar/`
+        - 📄 `src\app\(app)\calendar\CalendarClient.tsx` (React TypeScript)
+          - *Imports:* `react`, `next/link`, `lucide-react`, `@/components/ui/card`, `@/components/ui/badge`, `@/data/program`
+          - *Exports:* `CalendarClient`
+        - 📄 `src\app\(app)\calendar\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./CalendarClient`
+          - *Exports:* `CalendarPage`
+      - 📁 `src\app\(app)\dashboard/`
+        - 📄 `src\app\(app)\dashboard\DashboardClient.tsx` (React TypeScript)
+          - *Imports:* `next/link`, `@/data/program`, `@/lib/calculations`, `@/components/ui/card`, `@/components/ui/badge`, `@/components/ui/button`, `lucide-react`, `@/types`
+          - *Exports:* `DashboardClient`
+        - 📄 `src\app\(app)\dashboard\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./DashboardClient`
+          - *Exports:* `DashboardPage`
+      - 📁 `src\app\(app)\history/`
+        - 📄 `src\app\(app)\history\HistoryClient.tsx` (React TypeScript)
+          - *Imports:* `react`, `@tanstack/react-query`, `@/lib/supabase/client`, `@/data/program`, `@/components/ui/card`, `@/components/ui/badge`, `@/components/ui/input`, `@/lib/calculations`, `lucide-react`, `@/types`
+          - *Exports:* `HistoryClient`
+        - 📄 `src\app\(app)\history\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./HistoryClient`
+          - *Exports:* `HistoryPage`
+      - 📁 `src\app\(app)\nutrition/`
+        - 📄 `src\app\(app)\nutrition\NutritionClient.tsx` (React TypeScript)
+          - *Imports:* `react`, `react-hook-form`, `@hookform/resolvers/zod`, `zod`, `@/lib/services/data`, `@/data/program`, `@/components/ui/card`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/label`, `sonner`, `recharts`, `@/types`
+          - *Exports:* `NutritionClient`
+        - 📄 `src\app\(app)\nutrition\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./NutritionClient`
+          - *Exports:* `NutritionPage`
+      - 📁 `src\app\(app)\progress/`
+        - 📄 `src\app\(app)\progress\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./ProgressClient`
+          - *Exports:* `ProgressPage`
+        - 📄 `src\app\(app)\progress\ProgressClient.tsx` (React TypeScript)
+          - *Imports:* `react`, `@tanstack/react-query`, `@/lib/supabase/client`, `@/lib/calculations`, `@/data/program`, `@/components/ui/card`, `@/components/ui/select`, `recharts`, `@/types`
+          - *Exports:* `ProgressClient`
+      - 📁 `src\app\(app)\recovery/`
+        - 📄 `src\app\(app)\recovery\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./RecoveryClient`
+          - *Exports:* `RecoveryPage`
+        - 📄 `src\app\(app)\recovery\RecoveryClient.tsx` (React TypeScript)
+          - *Imports:* `react`, `react-hook-form`, `@hookform/resolvers/zod`, `zod`, `@/lib/services/data`, `@/data/program`, `@/components/ui/card`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/label`, `sonner`, `recharts`, `@/types`
+          - *Exports:* `RecoveryClient`
+      - 📁 `src\app\(app)\settings/`
+        - 📄 `src\app\(app)\settings\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./SettingsClient`
+          - *Exports:* `SettingsPage`
+        - 📄 `src\app\(app)\settings\SettingsClient.tsx` (React TypeScript)
+          - *Imports:* `react`, `react-hook-form`, `@hookform/resolvers/zod`, `zod`, `@/lib/services/data`, `@/lib/supabase/client`, `@/components/ui/card`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/label`, `@/components/ui/select`, `@/components/ui/separator`, `sonner`, `next/navigation`, `@/lib/services/auth`, `@/types`
+          - *Exports:* `SettingsClient`
+      - 📁 `src\app\(app)\workout/`
+        - 📄 `src\app\(app)\workout\page.tsx` (React TypeScript)
+          - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./WorkoutClient`, `@/data/program`
+          - *Exports:* `WorkoutPage`
+        - 📄 `src\app\(app)\workout\WorkoutClient.tsx` (React TypeScript)
+          - *Imports:* `react`, `@/data/program`, `@/types`, `@/lib/services/workouts`, `@/lib/calculations`, `@/components/ui/card`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/badge`, `@/components/ui/tabs`, `sonner`, `lucide-react`
+          - *Exports:* `WorkoutClient`
+      - 📄 `src\app\(app)\layout.tsx` (React TypeScript)
+        - *Imports:* `@/components/layout/Sidebar`, `@/components/layout/BottomNav`
+        - *Exports:* `AppLayout`
+    - 📁 `src\app\(auth)/`
+      - 📁 `src\app\(auth)\login/`
+        - 📄 `src\app\(auth)\login\page.tsx` (React TypeScript)
+          - *Imports:* `react`, `next/navigation`, `next/link`, `react-hook-form`, `@hookform/resolvers/zod`, `zod`, `@/lib/services/auth`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/label`, `@/components/ui/card`, `sonner`
+          - *Exports:* `LoginPage`
+      - 📁 `src\app\(auth)\signup/`
+        - 📄 `src\app\(auth)\signup\page.tsx` (React TypeScript)
+          - *Imports:* `react`, `next/navigation`, `next/link`, `react-hook-form`, `@hookform/resolvers/zod`, `zod`, `@/lib/services/auth`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/label`, `@/components/ui/card`, `sonner`
+          - *Exports:* `SignupPage`
+      - 📄 `src\app\(auth)\layout.tsx` (React TypeScript)
+        - *Imports:* `lucide-react`
+        - *Exports:* `AuthLayout`
     - 📄 `src\app\favicon.ico` (Unknown)
     - 📄 `src\app\globals.css` (CSS)
     - 📄 `src\app\layout.tsx` (React TypeScript)
-      - *Imports:* `next`, `next/font/google`, `./globals.css`
+      - *Imports:* `next`, `next/font/google`, `./globals.css`, `@/components/providers`, `@/components/ui/sonner`
       - *Exports:* `RootLayout`
     - 📄 `src\app\page.tsx` (React TypeScript)
-      - *Imports:* `next/image`
-      - *Exports:* `Home`
+      - *Imports:* `next/navigation`
+      - *Exports:* `RootPage`
+  - 📁 `src\components/`
+    - 📁 `src\components\calendar/`
+    - 📁 `src\components\dashboard/`
+    - 📁 `src\components\history/`
+    - 📁 `src\components\layout/`
+      - 📄 `src\components\layout\BottomNav.tsx` (React TypeScript)
+        - *Imports:* `next/link`, `next/navigation`, `lucide-react`, `@/lib/utils`
+        - *Exports:* `BottomNav`
+      - 📄 `src\components\layout\Sidebar.tsx` (React TypeScript)
+        - *Imports:* `next/link`, `next/navigation`, `lucide-react`, `@/lib/utils`, `@/lib/services/auth`, `next/navigation`
+        - *Exports:* `Sidebar`
+    - 📁 `src\components\nutrition/`
+    - 📁 `src\components\progress/`
+    - 📁 `src\components\recovery/`
+    - 📁 `src\components\settings/`
+    - 📁 `src\components\ui/`
+      - 📄 `src\components\ui\avatar.tsx` (React TypeScript)
+        - *Imports:* `react`, `@base-ui/react/avatar`, `cn`
+        - *Exports:* `Avatar`, `AvatarImage`, `AvatarFallback`, `AvatarGroup`, `AvatarGroupCount`, `AvatarBadge`
+      - 📄 `src\components\ui\badge.tsx` (React TypeScript)
+        - *Imports:* `@base-ui/react/merge-props`, `@base-ui/react/use-render`, `class-variance-authority`, `cn`
+        - *Exports:* `Badge`, `badgeVariants`
+      - 📄 `src\components\ui\button.tsx` (React TypeScript)
+        - *Imports:* `@base-ui/react/button`, `class-variance-authority`, `cn`
+        - *Exports:* `Button`, `buttonVariants`
+      - 📄 `src\components\ui\card.tsx` (React TypeScript)
+        - *Imports:* `react`, `cn`
+        - *Exports:* `Card`, `CardHeader`, `CardFooter`, `CardTitle`, `CardAction`, `CardDescription`, `CardContent`
+      - 📄 `src\components\ui\dialog.tsx` (React TypeScript)
+        - *Imports:* `react`, `@base-ui/react/dialog`, `cn`, `@/components/ui/button`, `lucide-react`
+        - *Exports:* `Dialog`, `DialogClose`, `DialogContent`, `DialogDescription`, `DialogFooter`, `DialogHeader`, `DialogOverlay`, `DialogPortal`, `DialogTitle`, `DialogTrigger`
+      - 📄 `src\components\ui\dropdown-menu.tsx` (React TypeScript)
+        - *Imports:* `react`, `@base-ui/react/menu`, `cn`, `lucide-react`
+        - *Exports:* `DropdownMenu`, `DropdownMenuPortal`, `DropdownMenuTrigger`, `DropdownMenuContent`, `DropdownMenuGroup`, `DropdownMenuLabel`, `DropdownMenuItem`, `DropdownMenuCheckboxItem`, `DropdownMenuRadioGroup`, `DropdownMenuRadioItem`, `DropdownMenuSeparator`, `DropdownMenuShortcut`, `DropdownMenuSub`, `DropdownMenuSubTrigger`, `DropdownMenuSubContent`
+      - 📄 `src\components\ui\input.tsx` (React TypeScript)
+        - *Imports:* `react`, `@base-ui/react/input`, `cn`
+        - *Exports:* `Input`
+      - 📄 `src\components\ui\label.tsx` (React TypeScript)
+        - *Imports:* `react`, `cn`
+        - *Exports:* `Label`
+      - 📄 `src\components\ui\progress.tsx` (React TypeScript)
+        - *Imports:* `@base-ui/react/progress`, `cn`
+        - *Exports:* `Progress`, `ProgressTrack`, `ProgressIndicator`, `ProgressLabel`, `ProgressValue`
+      - 📄 `src\components\ui\select.tsx` (React TypeScript)
+        - *Imports:* `react`, `@base-ui/react/select`, `cn`, `lucide-react`
+        - *Exports:* `Select`, `SelectContent`, `SelectGroup`, `SelectItem`, `SelectLabel`, `SelectScrollDownButton`, `SelectScrollUpButton`, `SelectSeparator`, `SelectTrigger`, `SelectValue`
+      - 📄 `src\components\ui\separator.tsx` (React TypeScript)
+        - *Imports:* `@base-ui/react/separator`, `cn`
+        - *Exports:* `Separator`
+      - 📄 `src\components\ui\sheet.tsx` (React TypeScript)
+        - *Imports:* `react`, `@base-ui/react/dialog`, `cn`, `@/components/ui/button`, `lucide-react`
+        - *Exports:* `Sheet`, `SheetTrigger`, `SheetClose`, `SheetContent`, `SheetHeader`, `SheetFooter`, `SheetTitle`, `SheetDescription`
+      - 📄 `src\components\ui\sonner.tsx` (React TypeScript)
+        - *Imports:* `next-themes`, `sonner`, `lucide-react`
+        - *Exports:* `Toaster`
+      - 📄 `src\components\ui\tabs.tsx` (React TypeScript)
+        - *Imports:* `@base-ui/react/tabs`, `class-variance-authority`, `cn`
+        - *Exports:* `Tabs`, `TabsList`, `TabsTrigger`, `TabsContent`, `tabsListVariants`
+      - 📄 `src\components\ui\textarea.tsx` (React TypeScript)
+        - *Imports:* `react`, `cn`
+        - *Exports:* `Textarea`
+      - 📄 `src\components\ui\toast.tsx` (React TypeScript)
+        - *Imports:* `react`, `@base-ui/react/toast`, `cn`, `@/components/ui/button`, `lucide-react`
+        - *Exports:* `Toaster`, `Toast`, `ToastAction`, `ToastClose`, `ToastContent`, `ToastDescription`, `ToastPortal`, `ToastProvider`, `ToastTitle`, `ToastViewport`, `createToastManager`, `toast`, `useToastManager`
+    - 📁 `src\components\workout/`
+    - 📄 `src\components\providers.tsx` (React TypeScript)
+      - *Imports:* `@tanstack/react-query`, `react`
+      - *Exports:* `QueryProvider`
+  - 📁 `src\data/`
+    - 📄 `src\data\program.ts` (TypeScript)
+      - *Imports:* `@/types`
+      - *Exports:* `getProgramDay`, `getTodayProgramDay`
+  - 📁 `src\hooks/`
+    - 📄 `src\hooks\useUser.ts` (TypeScript)
+      - *Imports:* `react`, `@/lib/supabase/client`, `@supabase/supabase-js`
+      - *Exports:* `useUser`
+  - 📁 `src\lib/`
+    - 📁 `src\lib\calculations/`
+      - 📄 `src\lib\calculations\index.ts` (TypeScript)
+        - *Imports:* `@/types`
+        - *Exports:* `sevenDayAverage`, `totalVolume`, `checkProgressionAvailable`, `averageMetric`, `weeklyWorkoutCompletion`, `formatWeight`
+    - 📁 `src\lib\services/`
+      - 📄 `src\lib\services\auth.ts` (TypeScript)
+        - *Imports:* `@/lib/supabase/client`
+        - *Exports:* `signUp`, `signIn`, `signOut`, `resetPassword`, `getUser`
+      - 📄 `src\lib\services\data.ts` (TypeScript)
+        - *Imports:* `@/lib/supabase/client`, `@/types`
+        - *Exports:* `getWeightLogs`, `upsertWeightLog`, `getNutritionLogs`, `getNutritionLogByDate`, `upsertNutritionLog`, `getRecoveryLogs`, `getRecoveryLogByDate`, `upsertRecoveryLog`, `getProfile`, `upsertProfile`, `getSettings`, `upsertSettings`
+      - 📄 `src\lib\services\workouts.ts` (TypeScript)
+        - *Imports:* `@/lib/supabase/client`, `@/types`
+        - *Exports:* `getWorkoutSessions`, `getWorkoutSessionByDate`, `createWorkoutSession`, `completeWorkoutSession`, `getExerciseLogs`, `upsertExerciseLog`, `upsertCardioLog`, `getCardioLogs`, `getLastSessionForDay`, `getExerciseHistory`, `getWorkoutStreak`
+    - 📁 `src\lib\supabase/`
+      - 📄 `src\lib\supabase\client.ts` (TypeScript)
+        - *Imports:* `@supabase/ssr`
+        - *Exports:* `createClient`
+      - 📄 `src\lib\supabase\middleware.ts` (TypeScript)
+        - *Imports:* `@supabase/ssr`, `next/server`
+        - *Exports:* `updateSession`
+      - 📄 `src\lib\supabase\server.ts` (TypeScript)
+        - *Imports:* `@supabase/ssr`, `next/headers`
+        - *Exports:* `createClient`
+    - 📁 `src\lib\validations/`
+    - 📄 `src\lib\utils.ts` (TypeScript)
+      - *Exports:* `* from cn`
+  - 📁 `src\types/`
+    - 📄 `src\types\index.ts` (TypeScript)
+  - 📄 `src\middleware.ts` (TypeScript)
+    - *Imports:* `next/server`, `@/lib/supabase/middleware`
+    - *Exports:* `middleware`
+- 📄 `.env.local` (Unknown)
 - 📄 `.gitignore` (Unknown)
 - 📄 `AGENTS.md` (Markdown)
 - 📄 `CLAUDE.md` (Markdown)
+- 📄 `components.json` (JSON)
 - 📄 `eslint.config.mjs` (Unknown)
 - 📄 `next-env.d.ts` (TypeScript)
   - *Imports:* `./.next/types/routes.d.ts`, `./.next/types/root-params.d.ts`
@@ -43,7 +227,9 @@ This file maintains an up-to-date list of project files and structure.
 - 📄 `package.json` (JSON)
 - 📄 `postcss.config.mjs` (Unknown)
 - 📄 `README.md` (Markdown)
+- 📄 `supabase-schema.sql` (Unknown)
 - 📄 `tsconfig.json` (JSON)
+- 📄 `tsconfig.tsbuildinfo` (Unknown)
 
 ---
-Last updated: 2026-09-08T10:39:27.126Z
+Last updated: 2026-09-09T05:41:23.609Z
