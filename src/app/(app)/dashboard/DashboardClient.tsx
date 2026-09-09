@@ -12,7 +12,7 @@ import type { Profile, NutritionLog, RecoveryLog } from '@/types'
 interface Props {
   userId: string
   profile: Profile | null
-  sessions: { date: string; status: string; program_day_id: string | null }[]
+  sessions: { date: string; status: string; program_day_id: number | null }[]
   weightLogs: { date: string; weight: number }[]
   nutritionLogs: NutritionLog[]
   recoveryLogs: RecoveryLog[]
