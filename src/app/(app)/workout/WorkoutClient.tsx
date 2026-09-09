@@ -86,11 +86,17 @@ export function WorkoutClient({ userId, initialDay, allDays }: Props) {
   async function handleStartWorkout() {
     if (!selectedDay) return
     const today = new Date().toISOString().split('T')[0]
-    const { data, error } = await createWorkoutSession(userId, selectedDay.day_number.toString(), today)
-    if (error || !data) { toast.error('Failed to start workout'); return }
+    const { data, error } = await createWorkoutSession(userId, selectedDay.day_number, today)
+    if (error || !data) {
+      toast.error(`Failed to start workout: ${error?.message ?? 'unknown error'}`)
+      return
+    }
     setSessionId(data.id)
     setStarted(true)
     setStartTime(new Date())
+
+    // Load last session once for the whole day
+    const { data: lastData } = await getLastSessionForDay(userId, selectedDay.day_number)
 
     // Init exercise states
     const states: Record<string, ExerciseState> = {}
@@ -98,8 +104,6 @@ export function WorkoutClient({ userId, initialDay, allDays }: Props) {
       const sets: SetRow[] = Array.from({ length: ex.sets }, (_, i) => ({
         set_number: i + 1, weight: '', actual_reps: '', rpe: '', completed: false,
       }))
-      // Load last session
-      const { data: lastData } = await getLastSessionForDay(userId, selectedDay.day_number.toString())
       let lastSession = null
       if (lastData?.exercise_logs) {
         const logs = (lastData.exercise_logs as { exercise_name: string; weight: number; actual_reps: number }[])
@@ -108,7 +112,6 @@ export function WorkoutClient({ userId, initialDay, allDays }: Props) {
           const w = logs[0].weight
           const reps = logs.map((l) => l.actual_reps).filter(Boolean)
           lastSession = { weight: w, reps }
-          // Pre-fill weight from last session
           sets.forEach((s) => { s.weight = w?.toString() ?? '' })
         }
       }

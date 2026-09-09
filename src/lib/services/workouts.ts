@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/client'
-import type { WorkoutSession, ExerciseLog, CardioLog } from '@/types'
+import type { ExerciseLog, CardioLog } from '@/types'
 
 export async function getWorkoutSessions(userId: string, limit = 30) {
   const supabase = createClient()
@@ -23,11 +23,11 @@ export async function getWorkoutSessionByDate(userId: string, date: string) {
 
 export async function createWorkoutSession(
   userId: string,
-  programDayId: string,
+  programDayId: number,
   date: string
 ) {
   const supabase = createClient()
-  return supabase
+  const { data, error } = await supabase
     .from('workout_sessions')
     .insert({
       user_id: userId,
@@ -38,17 +38,15 @@ export async function createWorkoutSession(
     })
     .select()
     .single()
+  if (error) console.error('createWorkoutSession error:', error)
+  return { data, error }
 }
 
-export async function completeWorkoutSession(
-  sessionId: string,
-  notes?: string
-) {
+export async function completeWorkoutSession(sessionId: string, notes?: string) {
   const supabase = createClient()
-  const completedAt = new Date().toISOString()
   return supabase
     .from('workout_sessions')
-    .update({ status: 'completed', completed_at: completedAt, notes })
+    .update({ status: 'completed', completed_at: new Date().toISOString(), notes })
     .eq('id', sessionId)
     .select()
     .single()
@@ -63,15 +61,22 @@ export async function getExerciseLogs(sessionId: string) {
     .order('set_number')
 }
 
-export async function upsertExerciseLog(log: Partial<ExerciseLog> & { workout_session_id: string; exercise_name: string; set_number: number }) {
+export async function upsertExerciseLog(
+  log: Partial<ExerciseLog> & { workout_session_id: string; exercise_name: string; set_number: number }
+) {
   const supabase = createClient()
-  if (log.id) {
-    return supabase.from('exercise_logs').update(log).eq('id', log.id).select().single()
+  // Remove program_exercise_id if empty string — it's optional
+  const payload = { ...log }
+  if (!payload.program_exercise_id) delete payload.program_exercise_id
+  if (payload.id) {
+    return supabase.from('exercise_logs').update(payload).eq('id', payload.id).select().single()
   }
-  return supabase.from('exercise_logs').insert(log).select().single()
+  return supabase.from('exercise_logs').insert(payload).select().single()
 }
 
-export async function upsertCardioLog(log: Partial<CardioLog> & { workout_session_id: string; cardio_type: string }) {
+export async function upsertCardioLog(
+  log: Partial<CardioLog> & { workout_session_id: string; cardio_type: string }
+) {
   const supabase = createClient()
   if (log.id) {
     return supabase.from('cardio_logs').update(log).eq('id', log.id).select().single()
@@ -81,13 +86,10 @@ export async function upsertCardioLog(log: Partial<CardioLog> & { workout_sessio
 
 export async function getCardioLogs(sessionId: string) {
   const supabase = createClient()
-  return supabase
-    .from('cardio_logs')
-    .select('*')
-    .eq('workout_session_id', sessionId)
+  return supabase.from('cardio_logs').select('*').eq('workout_session_id', sessionId)
 }
 
-export async function getLastSessionForDay(userId: string, programDayId: string) {
+export async function getLastSessionForDay(userId: string, programDayId: number) {
   const supabase = createClient()
   return supabase
     .from('workout_sessions')
