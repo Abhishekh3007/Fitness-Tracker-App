@@ -1,3 +1,5 @@
+export type Goal = 'fat_loss' | 'muscle_gain' | 'maintenance'
+
 export interface Profile {
   id: string
   user_id: string
@@ -8,51 +10,15 @@ export interface Profile {
   target_weight: number | null
   current_weight: number | null
   preferred_units: 'kg' | 'lbs'
+  goal: Goal | null
   created_at: string
   updated_at: string
-}
-
-export interface Program {
-  id: string
-  name: string
-  description: string | null
-  created_at: string
-}
-
-export interface ProgramDay {
-  id: string
-  program_id: string
-  day_number: number
-  day_name: string
-  training_type: string
-  description: string | null
-}
-
-export interface ProgramExercise {
-  id: string
-  program_day_id: string
-  exercise_name: string
-  sets: number
-  rep_min: number
-  rep_max: number
-  order_index: number
-  notes: string | null
-}
-
-export interface ProgramCardio {
-  id: string
-  program_day_id: string
-  cardio_type: string
-  duration_min: number
-  duration_max: number | null
-  intensity: string | null
-  notes: string | null
 }
 
 export interface WorkoutSession {
   id: string
   user_id: string
-  program_day_id: string
+  program_day_id: number | null
   date: string
   started_at: string | null
   completed_at: string | null
@@ -131,7 +97,7 @@ export interface UserSettings {
   updated_at: string
 }
 
-// Program data types (static, from MD file)
+// Program data types (static)
 export interface ProgramDayData {
   day_number: number
   day_name: string

@@ -48,7 +48,7 @@ create table if not exists program_exercises (
   rep_min integer not null,
   rep_max integer not null,
   order_index integer not null,
-  notes text
+  notes text  
 );
 
 -- program_cardio

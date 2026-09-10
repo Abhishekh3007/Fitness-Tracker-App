@@ -26,17 +26,18 @@ type FormData = z.infer<typeof schema>
 
 interface Props {
   userId: string
+  today: string
+  todayFormatted: string
   logs: NutritionLog[]
   settings: UserSettings | null
 }
 
-export function NutritionClient({ userId, logs, settings }: Props) {
-  const today = new Date().toISOString().split('T')[0]
+export function NutritionClient({ userId, today, todayFormatted, logs, settings }: Props) {
   const todayLog = logs.find((l) => l.date === today)
   const [allLogs, setAllLogs] = useState(logs)
   const [saving, setSaving] = useState(false)
 
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
+  const { register, handleSubmit } = useForm<FormData>({
     resolver: zodResolver(schema),
     defaultValues: {
       calories: todayLog?.calories ?? undefined,
@@ -52,7 +53,7 @@ export function NutritionClient({ userId, logs, settings }: Props) {
     setSaving(true)
     const { error, data: saved } = await upsertNutritionLog({ user_id: userId, date: today, ...data })
     setSaving(false)
-    if (error) { toast.error('Failed to save'); return }
+    if (error) { toast.error(error.message); return }
     toast.success('Nutrition logged!')
     if (saved) setAllLogs((prev) => [saved, ...prev.filter((l) => l.date !== today)])
   }
@@ -67,7 +68,6 @@ export function NutritionClient({ userId, logs, settings }: Props) {
     <div className="p-4 md:p-8 max-w-3xl mx-auto space-y-6">
       <h1 className="text-2xl font-bold text-white">Nutrition</h1>
 
-      {/* Program guidance */}
       <Card className="bg-zinc-900 border-zinc-800 border-l-4 border-l-orange-500">
         <CardContent className="p-4 space-y-1">
           <p className="text-xs text-orange-400 uppercase tracking-widest font-medium">Program Guidance</p>
@@ -77,26 +77,23 @@ export function NutritionClient({ userId, logs, settings }: Props) {
         </CardContent>
       </Card>
 
-      {/* Today's log form */}
       <Card className="bg-zinc-900 border-zinc-800">
         <CardHeader>
-          <CardTitle className="text-white text-base">
-            Today — {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' })}
-          </CardTitle>
+          <CardTitle className="text-white text-base">Today — {todayFormatted}</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div className="grid grid-cols-2 gap-3">
-              {[
+              {([
                 { name: 'calories' as const, label: 'Calories (kcal)', target: settings?.calorie_target },
                 { name: 'protein' as const, label: 'Protein (g)', target: settings?.protein_target },
                 { name: 'carbs' as const, label: 'Carbs (g)', target: null },
                 { name: 'fat' as const, label: 'Fat (g)', target: null },
                 { name: 'water' as const, label: 'Water (L)', target: 3.5 },
-              ].map(({ name, label, target }) => (
+              ]).map(({ name, label, target }) => (
                 <div key={name} className="space-y-1">
                   <Label className="text-xs text-zinc-400">
-                    {label}{target ? <span className="text-zinc-600 ml-1">/ target: {target}</span> : ''}
+                    {label}{target ? <span className="text-zinc-600 ml-1">target: {target}</span> : ''}
                   </Label>
                   <Input {...register(name)} type="number" step="0.1"
                     className="bg-zinc-800 border-zinc-700" placeholder="0" />
@@ -108,18 +105,15 @@ export function NutritionClient({ userId, logs, settings }: Props) {
               <Input {...register('notes')} className="bg-zinc-800 border-zinc-700" placeholder="Meal notes…" />
             </div>
             <Button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white" disabled={saving}>
-              {saving ? 'Saving…' : 'Save Today'}
+              {saving ? 'Saving…' : todayLog ? 'Update Today' : 'Save Today'}
             </Button>
           </form>
         </CardContent>
       </Card>
 
-      {/* Chart */}
       {chartData.length > 1 && (
         <Card className="bg-zinc-900 border-zinc-800">
-          <CardHeader>
-            <CardTitle className="text-white text-base">14-Day Overview</CardTitle>
-          </CardHeader>
+          <CardHeader><CardTitle className="text-white text-base">14-Day Overview</CardTitle></CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={200}>
               <BarChart data={chartData}>
@@ -135,7 +129,6 @@ export function NutritionClient({ userId, logs, settings }: Props) {
         </Card>
       )}
 
-      {/* Recent logs */}
       <Card className="bg-zinc-900 border-zinc-800">
         <CardHeader><CardTitle className="text-white text-base">Recent</CardTitle></CardHeader>
         <CardContent>
@@ -147,9 +140,9 @@ export function NutritionClient({ userId, logs, settings }: Props) {
                 <div key={log.id} className="flex items-center justify-between py-2 border-b border-zinc-800 last:border-0">
                   <span className="text-sm text-zinc-400">{log.date}</span>
                   <div className="flex gap-4 text-sm">
-                    {log.calories && <span className="text-orange-400">{log.calories} kcal</span>}
-                    {log.protein && <span className="text-purple-400">{log.protein}g protein</span>}
-                    {log.water && <span className="text-blue-400">{log.water}L water</span>}
+                    {log.calories != null && <span className="text-orange-400">{log.calories} kcal</span>}
+                    {log.protein != null && <span className="text-purple-400">{log.protein}g protein</span>}
+                    {log.water != null && <span className="text-blue-400">{log.water}L</span>}
                   </div>
                 </div>
               ))}

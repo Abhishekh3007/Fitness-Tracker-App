@@ -5,6 +5,1460 @@ This file maintains an up-to-date list of project files and structure.
 ## File Structure
 
 - 📁 `.next/`
+  - 📁 `.next\build/`
+    - 📁 `.next\build\chunks/`
+      - 📄 `.next\build\chunks\[root-of-the-server]__05i36w1._.js` (JavaScript)
+        - *Exports:* `module.exports`, `module.exports`, `module.exports`
+      - 📄 `.next\build\chunks\[root-of-the-server]__05i36w1._.js.map` (Unknown)
+      - 📄 `.next\build\chunks\[root-of-the-server]__1kki86f._.js` (JavaScript)
+        - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+      - 📄 `.next\build\chunks\[root-of-the-server]__1kki86f._.js.map` (Unknown)
+      - 📄 `.next\build\chunks\[turbopack-node]_transforms_postcss_ts_1gfkiq9._.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\build\chunks\[turbopack-node]_transforms_postcss_ts_1gfkiq9._.js.map` (Unknown)
+      - 📄 `.next\build\chunks\[turbopack]_runtime.js` (JavaScript)
+        - *Imports:* `path`, `url`
+        - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+      - 📄 `.next\build\chunks\[turbopack]_runtime.js.map` (Unknown)
+      - 📄 `.next\build\chunks\node_modules_20v-8wl._.js` (JavaScript)
+        - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+      - 📄 `.next\build\chunks\node_modules_20v-8wl._.js.map` (Unknown)
+      - 📄 `.next\build\chunks\pool_entry-[turbopack-node]_transforms_postcss_ts_0tp-k2v._.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\build\chunks\pool_entry-[turbopack-node]_transforms_postcss_ts_0tp-k2v._.js.map` (Unknown)
+    - 📄 `.next\build\package.json` (JSON)
+  - 📁 `.next\cache/`
+    - 📁 `.next\cache\turbopack/`
+      - 📁 `.next\cache\turbopack\v16.3.4-299180d3/`
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000001.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000002.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000003.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000004.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000005.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000006.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000007.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000008.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000009.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000010.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000011.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000012.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000013.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000014.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000015.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000016.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000017.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000018.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000019.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000020.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000021.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000022.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000023.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000024.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000025.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000026.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000027.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000028.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000029.sst` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000030.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000031.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000032.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\00000033.meta` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\CURRENT` (Unknown)
+        - 📄 `.next\cache\turbopack\v16.3.4-299180d3\LOG` (Unknown)
+    - 📄 `.next\cache\.previewinfo` (Unknown)
+    - 📄 `.next\cache\.rscinfo` (Unknown)
+    - 📄 `.next\cache\.tsbuildinfo` (Unknown)
+  - 📁 `.next\dev/`
+    - 📁 `.next\dev\build/`
+      - 📁 `.next\dev\build\chunks/`
+        - 📄 `.next\dev\build\chunks\[root-of-the-server]__05i36w1._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\build\chunks\[root-of-the-server]__05i36w1._.js.map` (Unknown)
+        - 📄 `.next\dev\build\chunks\[root-of-the-server]__1kki86f._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\build\chunks\[root-of-the-server]__1kki86f._.js.map` (Unknown)
+        - 📄 `.next\dev\build\chunks\[turbopack-node]_transforms_postcss_ts_1gfkiq9._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\dev\build\chunks\[turbopack-node]_transforms_postcss_ts_1gfkiq9._.js.map` (Unknown)
+        - 📄 `.next\dev\build\chunks\[turbopack]_runtime.js` (JavaScript)
+          - *Imports:* `path`, `url`
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\build\chunks\[turbopack]_runtime.js.map` (Unknown)
+        - 📄 `.next\dev\build\chunks\node_modules_20v-8wl._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\build\chunks\node_modules_20v-8wl._.js.map` (Unknown)
+        - 📄 `.next\dev\build\chunks\pool_entry-[turbopack-node]_transforms_postcss_ts_0tp-k2v._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\dev\build\chunks\pool_entry-[turbopack-node]_transforms_postcss_ts_0tp-k2v._.js.map` (Unknown)
+      - 📄 `.next\dev\build\package.json` (JSON)
+    - 📁 `.next\dev\cache/`
+      - 📁 `.next\dev\cache\turbopack/`
+        - 📁 `.next\dev\cache\turbopack\v16.3.4-299180d3/`
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000001.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000003.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000004.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000005.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000006.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000008.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000013.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000014.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000015.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000016.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000017.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000019.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000021.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000022.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000023.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000025.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000030.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000031.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000032.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000033.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000034.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000036.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000041.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000043.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000044.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000045.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000046.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000048.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000050.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000052.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000053.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000054.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000056.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000057.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000058.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000060.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000061.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000062.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000063.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000065.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000067.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000068.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000069.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000070.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000071.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000073.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000075.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000076.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000077.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000078.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000080.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000081.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000086.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000087.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000088.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000089.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000090.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000092.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000097.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000098.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000099.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000100.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000101.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000103.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000104.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000106.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000107.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000108.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000109.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000111.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000116.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000118.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000119.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000120.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000121.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000123.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000124.del` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000129.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000130.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000131.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000132.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000133.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000134.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000140.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000141.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000142.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000143.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000144.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000146.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000151.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000152.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000153.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000154.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000155.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000157.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000158.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000159.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000160.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000161.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000162.del` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000163.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000164.sst` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000165.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000166.meta` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\00000167.del` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\CURRENT` (Unknown)
+          - 📄 `.next\dev\cache\turbopack\v16.3.4-299180d3\LOG` (Unknown)
+      - 📄 `.next\dev\cache\.rscinfo` (Unknown)
+      - 📄 `.next\dev\cache\next-devtools-config.json` (JSON)
+    - 📁 `.next\dev\logs/`
+    - 📁 `.next\dev\server/`
+      - 📁 `.next\dev\server\app/`
+        - 📁 `.next\dev\server\app\_not-found/`
+          - 📁 `.next\dev\server\app\_not-found\page/`
+            - 📄 `.next\dev\server\app\_not-found\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\_not-found\page\build-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\_not-found\page\client-components-ssr.js` (JavaScript)
+            - 📄 `.next\dev\server\app\_not-found\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\_not-found\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\_not-found\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\dev\server\app\_not-found\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\dev\server\app\_not-found\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\app\_not-found\page.js.map` (Unknown)
+        - 📁 `.next\dev\server\app\(app)/`
+          - 📁 `.next\dev\server\app\(app)\dashboard/`
+            - 📁 `.next\dev\server\app\(app)\dashboard\page/`
+              - 📄 `.next\dev\server\app\(app)\dashboard\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\dashboard\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\dashboard\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(app)\dashboard\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\dashboard\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\dashboard\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(app)\dashboard\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(app)\dashboard\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(app)\dashboard\page.js.map` (Unknown)
+          - 📁 `.next\dev\server\app\(app)\history/`
+            - 📁 `.next\dev\server\app\(app)\history\page/`
+              - 📄 `.next\dev\server\app\(app)\history\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\history\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\history\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(app)\history\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\history\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\history\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(app)\history\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(app)\history\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(app)\history\page.js.map` (Unknown)
+          - 📁 `.next\dev\server\app\(app)\nutrition/`
+            - 📁 `.next\dev\server\app\(app)\nutrition\page/`
+              - 📄 `.next\dev\server\app\(app)\nutrition\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\nutrition\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\nutrition\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(app)\nutrition\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\nutrition\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\nutrition\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(app)\nutrition\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(app)\nutrition\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(app)\nutrition\page.js.map` (Unknown)
+          - 📁 `.next\dev\server\app\(app)\progress/`
+            - 📁 `.next\dev\server\app\(app)\progress\page/`
+              - 📄 `.next\dev\server\app\(app)\progress\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\progress\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\progress\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(app)\progress\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\progress\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\progress\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(app)\progress\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(app)\progress\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(app)\progress\page.js.map` (Unknown)
+          - 📁 `.next\dev\server\app\(app)\recovery/`
+            - 📁 `.next\dev\server\app\(app)\recovery\page/`
+              - 📄 `.next\dev\server\app\(app)\recovery\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\recovery\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\recovery\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(app)\recovery\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\recovery\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\recovery\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(app)\recovery\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(app)\recovery\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(app)\recovery\page.js.map` (Unknown)
+          - 📁 `.next\dev\server\app\(app)\workout/`
+            - 📁 `.next\dev\server\app\(app)\workout\page/`
+              - 📄 `.next\dev\server\app\(app)\workout\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\workout\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\workout\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(app)\workout\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\workout\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(app)\workout\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(app)\workout\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(app)\workout\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(app)\workout\page.js.map` (Unknown)
+        - 📁 `.next\dev\server\app\(auth)/`
+          - 📁 `.next\dev\server\app\(auth)\login/`
+            - 📁 `.next\dev\server\app\(auth)\login\page/`
+              - 📄 `.next\dev\server\app\(auth)\login\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\login\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\login\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(auth)\login\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\login\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\login\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(auth)\login\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(auth)\login\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(auth)\login\page.js.map` (Unknown)
+          - 📁 `.next\dev\server\app\(auth)\signup/`
+            - 📁 `.next\dev\server\app\(auth)\signup\page/`
+              - 📄 `.next\dev\server\app\(auth)\signup\page\app-paths-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\signup\page\build-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\signup\page\client-components-ssr.js` (JavaScript)
+              - 📄 `.next\dev\server\app\(auth)\signup\page\next-font-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\signup\page\react-loadable-manifest.json` (JSON)
+              - 📄 `.next\dev\server\app\(auth)\signup\page\server-reference-manifest.json` (JSON)
+            - 📄 `.next\dev\server\app\(auth)\signup\page_client-reference-manifest.js` (JavaScript)
+            - 📄 `.next\dev\server\app\(auth)\signup\page.js` (JavaScript)
+              - *Exports:* `module.exports`
+            - 📄 `.next\dev\server\app\(auth)\signup\page.js.map` (Unknown)
+        - 📁 `.next\dev\server\app\page/`
+          - 📄 `.next\dev\server\app\page\app-paths-manifest.json` (JSON)
+          - 📄 `.next\dev\server\app\page\build-manifest.json` (JSON)
+          - 📄 `.next\dev\server\app\page\client-components-ssr.js` (JavaScript)
+          - 📄 `.next\dev\server\app\page\next-font-manifest.json` (JSON)
+          - 📄 `.next\dev\server\app\page\react-loadable-manifest.json` (JSON)
+          - 📄 `.next\dev\server\app\page\server-reference-manifest.json` (JSON)
+        - 📄 `.next\dev\server\app\page_client-reference-manifest.js` (JavaScript)
+        - 📄 `.next\dev\server\app\page.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\dev\server\app\page.js.map` (Unknown)
+      - 📁 `.next\dev\server\chunks/`
+        - 📁 `.next\dev\server\chunks\ssr/`
+          - 📄 `.next\dev\server\chunks\ssr\_0rqbxol._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_0rqbxol._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_1cg-1bm._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_1cg-1bm._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app__not-found_page_actions_0pt47yr.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app__not-found_page_actions_0pt47yr.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_dashboard_page_actions_19--7_-.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_dashboard_page_actions_19--7_-.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_history_page_actions_0ygxaxg.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_history_page_actions_0ygxaxg.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_nutrition_page_actions_1zjla0j.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_nutrition_page_actions_1zjla0j.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_progress_page_actions_0z6yh68.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_progress_page_actions_0z6yh68.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_recovery_page_actions_16o2fk4.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_recovery_page_actions_16o2fk4.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_workout_page_actions_19eke0w.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(app)_workout_page_actions_19eke0w.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(auth)_login_page_actions_1jr42c1.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(auth)_login_page_actions_1jr42c1.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(auth)_signup_page_actions_0mzh_ty.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_(auth)_signup_page_actions_0mzh_ty.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_page_actions_0hhsz1j.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\_next-internal_server_app_page_actions_0hhsz1j.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[externals]__05yr04l._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[externals]__05yr04l._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[externals]__0mly4vc._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[externals]__0mly4vc._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[externals]__1vp7etu._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[externals]__1vp7etu._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__09x-cth._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__09x-cth._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0c6ha-5._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0c6ha-5._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0de6qwu._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0de6qwu._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0e59jha._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0e59jha._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0hmgsoy._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0hmgsoy._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0pgnq72._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0pgnq72._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0r_bpik._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0r_bpik._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0tfyoff._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0tfyoff._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0y0_snu._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__0y0_snu._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__11r3uxo._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__11r3uxo._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__1qq_xp6._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__1qq_xp6._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__1s_xdm1._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__1s_xdm1._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__1ug8p5-._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[root-of-the-server]__1ug8p5-._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\[turbopack]_runtime.js` (JavaScript)
+            - *Imports:* `worker_threads`, `path`, `url`
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\[turbopack]_runtime.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@base-ui_react_0s7vgp2._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@base-ui_react_0s7vgp2._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@base-ui_react_1q0zfj7._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@base-ui_react_1q0zfj7._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@supabase_auth-js_dist_module_1n0p09k._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@supabase_auth-js_dist_module_1n0p09k._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@supabase_auth-js_dist_module_1z23ps2._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_@supabase_auth-js_dist_module_1z23ps2._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_01xbj_9._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_01xbj_9._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_02es85m._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_02es85m._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_0nvtfsy._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_0nvtfsy._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1_aarlg._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1_aarlg._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_12chkx9._.js` (JavaScript)
+            - *Exports:* `module.exports`
+            - *Routes Provided:* `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`, `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_12chkx9._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_13m2dzz._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_13m2dzz._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_168rzl0._.js` (JavaScript)
+            - *Exports:* `module.exports`
+            - *Routes Provided:* `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`, `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_168rzl0._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_168ymkq._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_168ymkq._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1bdd7ja._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1bdd7ja._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1eveqgm._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1eveqgm._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1qc4a6u._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1qc4a6u._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1qynswh._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_1qynswh._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_20as0in._.js` (JavaScript)
+            - *Exports:* `module.exports`
+            - *Routes Provided:* `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`, `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_20as0in._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_es-toolkit_dist_0jof14j._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_es-toolkit_dist_0jof14j._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_02iiy4y._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_02iiy4y._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0cwk7wt._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0cwk7wt._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0pqvgh3._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0pqvgh3._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0t23u0b._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+            - *Routes Consumed:* `/api/data`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0t23u0b._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0ti_y_6._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_0ti_y_6._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_1_o5zxs._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_1_o5zxs._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_191lu2p._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_191lu2p._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_1t3hjxj._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_1t3hjxj._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_20quvg4._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+            - *Routes Consumed:* `/api/data`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_20quvg4._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1buh8d1._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1buh8d1._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1cyz2na._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1cyz2na._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1enk-kb._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1enk-kb._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1iwbaro._.js` (JavaScript)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1iwbaro._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1y4o1qr._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_1y4o1qr._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_0wpq8j3._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_0wpq8j3._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_builtin_global-error_0-o-goa.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_builtin_global-error_0-o-goa.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_compiled_0d323sd._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_compiled_0d323sd._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_esm_1ivs2qn._.js` (JavaScript)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_esm_1ivs2qn._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_server_route-modules_app-page_0qo_rmc._.js` (JavaScript)
+            - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_next_dist_server_route-modules_app-page_0qo_rmc._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_react-hook-form_dist_index_esm_mjs_0sajker._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_react-hook-form_dist_index_esm_mjs_0sajker._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_02o55t9._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_02o55t9._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_0jw4qma._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_0jw4qma._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_1e-lnxi._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_1e-lnxi._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_cartesian_0klmwmy._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_cartesian_0klmwmy._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_cartesian_11u_u6y._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_cartesian_11u_u6y._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_component_17tl74j._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_component_17tl74j._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_component_1ae55rt._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_component_1ae55rt._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_state_0uik_uv._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_state_0uik_uv._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_state_0wizm0h._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_state_0wizm0h._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_state_17d2f2k._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_state_17d2f2k._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_util_0hzk33t._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_util_0hzk33t._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_util_0ofrvrw._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_util_0ofrvrw._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_util_11lgqv4._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_recharts_es6_util_11lgqv4._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_zod_v3_03sk8vo._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\node_modules_zod_v3_03sk8vo._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_02lcg94._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_02lcg94._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_03kxuwq._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_03kxuwq._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_05o90cf._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_05o90cf._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_0d48l5l._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_0d48l5l._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_0i6stum._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_0i6stum._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_0n0buad._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_0n0buad._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_106l9os._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_106l9os._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_15chap4._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_15chap4._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_1k43wh1._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_1k43wh1._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_1qbzykx._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_1qbzykx._.js.map` (Unknown)
+          - 📄 `.next\dev\server\chunks\ssr\src_1z5qegc._.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\dev\server\chunks\ssr\src_1z5qegc._.js.map` (Unknown)
+        - 📄 `.next\dev\server\chunks\[root-of-the-server]__1kx-ck0._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\server\chunks\[root-of-the-server]__1kx-ck0._.js.map` (Unknown)
+        - 📄 `.next\dev\server\chunks\[turbopack]_runtime.js` (JavaScript)
+          - *Imports:* `worker_threads`, `path`, `url`
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\server\chunks\[turbopack]_runtime.js.map` (Unknown)
+        - 📄 `.next\dev\server\chunks\node_modules_@supabase_auth-js_dist_module_1hd695_._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\dev\server\chunks\node_modules_@supabase_auth-js_dist_module_1hd695_._.js.map` (Unknown)
+        - 📄 `.next\dev\server\chunks\node_modules_0tamgxo._.js` (JavaScript)
+          - *Exports:* `module.exports`
+          - *Routes Provided:* `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`, `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`
+        - 📄 `.next\dev\server\chunks\node_modules_0tamgxo._.js.map` (Unknown)
+        - 📄 `.next\dev\server\chunks\node_modules_next_1lry6pd._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - *Routes Provided:* `GET /`, `GET /`, `GET /`, `GET /`
+        - 📄 `.next\dev\server\chunks\node_modules_next_1lry6pd._.js.map` (Unknown)
+      - 📁 `.next\dev\server\middleware/`
+        - 📄 `.next\dev\server\middleware\middleware-manifest.json` (JSON)
+      - 📁 `.next\dev\server\pages/`
+        - 📁 `.next\dev\server\pages\_app/`
+          - 📄 `.next\dev\server\pages\_app\build-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_app\client-build-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_app\next-font-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_app\pages-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_app\react-loadable-manifest.json` (JSON)
+        - 📁 `.next\dev\server\pages\_document/`
+          - 📄 `.next\dev\server\pages\_document\next-font-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_document\pages-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_document\react-loadable-manifest.json` (JSON)
+        - 📁 `.next\dev\server\pages\_error/`
+          - 📄 `.next\dev\server\pages\_error\build-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_error\client-build-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_error\next-font-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_error\pages-manifest.json` (JSON)
+          - 📄 `.next\dev\server\pages\_error\react-loadable-manifest.json` (JSON)
+        - 📄 `.next\dev\server\pages\_app.js` (JavaScript)
+          - *Exports:* `module.exports`
+          - *Routes Provided:* `GET /_app`
+        - 📄 `.next\dev\server\pages\_app.js.map` (Unknown)
+        - 📄 `.next\dev\server\pages\_document.js` (JavaScript)
+          - *Exports:* `module.exports`
+          - *Routes Provided:* `GET /_document`
+        - 📄 `.next\dev\server\pages\_document.js.map` (Unknown)
+        - 📄 `.next\dev\server\pages\_error.js` (JavaScript)
+          - *Exports:* `module.exports`
+          - *Routes Provided:* `GET /_error`
+        - 📄 `.next\dev\server\pages\_error.js.map` (Unknown)
+      - 📄 `.next\dev\server\app-paths-manifest.json` (JSON)
+      - 📄 `.next\dev\server\interception-route-rewrite-manifest.js` (JavaScript)
+      - 📄 `.next\dev\server\middleware-build-manifest.js` (JavaScript)
+      - 📄 `.next\dev\server\middleware-manifest.json` (JSON)
+      - 📄 `.next\dev\server\middleware.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\dev\server\middleware.js.map` (Unknown)
+      - 📄 `.next\dev\server\next-font-manifest.js` (JavaScript)
+      - 📄 `.next\dev\server\next-font-manifest.json` (JSON)
+      - 📄 `.next\dev\server\pages-manifest.json` (JSON)
+      - 📄 `.next\dev\server\server-reference-manifest.js` (JavaScript)
+      - 📄 `.next\dev\server\server-reference-manifest.json` (JSON)
+    - 📁 `.next\dev\static/`
+      - 📁 `.next\dev\static\chunks/`
+        - 📁 `.next\dev\static\chunks\pages/`
+          - 📄 `.next\dev\static\chunks\pages\_app.js` (JavaScript)
+            - *Routes Provided:* `GET /_app`
+          - 📄 `.next\dev\static\chunks\pages\_error.js` (JavaScript)
+            - *Routes Provided:* `GET /_error`
+        - 📄 `.next\dev\static\chunks\_08bm286._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\_0czwm34._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_0mc45lb._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_0nkhumg._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_0vun8eb._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_18x7jxu._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_1anvha4._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_1cl1jdt._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_1pp3i4i._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_1s878xs._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_1v34no6._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_1v6lc5a._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\_1v6lc5a._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\_219uq1s._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\[next]_entry_page-loader_ts_0z3haqk._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\[next]_entry_page-loader_ts_0z3haqk._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\[next]_entry_page-loader_ts_1aoli7m._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\[next]_entry_page-loader_ts_1aoli7m._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\[next]_internal_font_google_geist_a8fa0c1a_module_css_1igg3k2._.single.css` (CSS)
+        - 📄 `.next\dev\static\chunks\[next]_internal_font_google_geist_a8fa0c1a_module_css_1igg3k2._.single.css.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\[root-of-the-server]__02sxxph._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\[root-of-the-server]__02sxxph._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\[root-of-the-server]__0l4r13l._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\[root-of-the-server]__0l4r13l._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\[root-of-the-server]__13cck8t._.css` (CSS)
+        - 📄 `.next\dev\static\chunks\[root-of-the-server]__13cck8t._.css.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\[turbopack]_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\[turbopack]_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\[turbopack]_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\[turbopack]_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_@base-ui_react_0kp8_iz._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_@base-ui_react_0kp8_iz._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_@base-ui_react_11zt6b1._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_@base-ui_react_11zt6b1._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_@supabase_auth-js_dist_module_1vqrmkg._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_@supabase_auth-js_dist_module_1vqrmkg._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_@swc_helpers_cjs_1r9vbqw._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_@swc_helpers_cjs_1r9vbqw._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_03qxoqn._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_03qxoqn._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_03vyni-._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_03vyni-._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_0gzy6fn._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_0gzy6fn._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_0h2_rpn._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_0h2_rpn._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_0ok2zau._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_0ok2zau._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_0qzhx97._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - *Routes Provided:* `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`, `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`
+        - 📄 `.next\dev\static\chunks\node_modules_0qzhx97._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_1-wap60._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_1-wap60._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_10e2-xo._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_10e2-xo._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_12mzw2t._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - *Routes Provided:* `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`, `GET /`, `GET folder/image.png`, `GET folder/avatar1.png`
+        - 📄 `.next\dev\static\chunks\node_modules_12mzw2t._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_1jiz3w-._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_1jiz3w-._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_es-toolkit_dist_16minl7._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_es-toolkit_dist_16minl7._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_app_0yrdk3r.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_next_app_0yrdk3r.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_1atto1n._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_1atto1n._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_1e8vcs8._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_1e8vcs8._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_1gdrd03._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_1gdrd03._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_build_polyfills_polyfill-nomodule.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_build_polyfills_polyfill-nomodule.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_client_0_90u2t._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - *Routes Provided:* `GET default`, `GET _not-found`, `GET default`, `GET _not-found`
+          - *Routes Consumed:* `/api/data`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_client_0_90u2t._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_client_16lnmlo._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - *Routes Provided:* `GET /_next/hmr`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_client_16lnmlo._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_14ibvna._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+          - *Routes Provided:* `GET Unknown URL`, `GET Unknown URL`
+          - *Routes Consumed:* `/__nextjs_devtools_config`, `/__nextjs_server_status`, `/__nextjs_server_status`, `/__nextjs_disable_dev_indicator`, `/__nextjs_attach-nodejs-inspector`, `/__nextjs_original-stack-frames`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_14ibvna._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_1amofcm._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_1amofcm._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_next-devtools_index_090k2jm.js` (JavaScript)
+          - *Routes Provided:* `GET Unknown URL`, `GET Unknown URL`
+          - *Routes Consumed:* `/__nextjs_devtools_config`, `/__nextjs_server_status`, `/__nextjs_server_status`, `/__nextjs_disable_dev_indicator`, `/__nextjs_attach-nodejs-inspector`, `/__nextjs_original-stack-frames`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_next-devtools_index_090k2jm.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_react-dom_096_9a-._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_react-dom_096_9a-._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_shared_lib_196_nl_._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`
+          - *Routes Provided:* `GET /_next/image`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_shared_lib_196_nl_._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_shared_lib_1vsvqbg._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`
+          - *Routes Provided:* `GET /_next/image`
+        - 📄 `.next\dev\static\chunks\node_modules_next_dist_shared_lib_1vsvqbg._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_react-dom_0kla17-._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`
+          - *Routes Provided:* `GET clipPath`
+        - 📄 `.next\dev\static\chunks\node_modules_react-dom_0kla17-._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_react-hook-form_dist_index_esm_mjs_0b0kr13._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_react-hook-form_dist_index_esm_mjs_0b0kr13._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_1opefnq._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_1opefnq._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_1pd11sa._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_1pd11sa._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_1zlz2bs._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_1zlz2bs._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_cartesian_00fhup4._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_cartesian_00fhup4._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_cartesian_05enf8t._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_cartesian_05enf8t._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_component_0na1-t3._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_component_0na1-t3._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_component_141l5d5._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_component_141l5d5._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_state_0cpf2zh._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_state_0cpf2zh._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_state_0qgrjwt._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_state_0qgrjwt._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_state_1_-xsv7._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_state_1_-xsv7._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_util_0ljmaed._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_util_0ljmaed._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_util_0mnqysr._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_util_0mnqysr._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_util_1cgagmr._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_recharts_es6_util_1cgagmr._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\node_modules_zod_v3_0oikqvy._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\node_modules_zod_v3_0oikqvy._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\pages__app_0du2_q-._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\pages__app_0e7z0ug._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\pages__error_0du2_q-._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\pages__error_1g3qll_._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_01esa_r._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_01esa_r._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_0pe57xw._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_0pe57xw._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_0qouk0y._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_0qouk0y._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_0u9wquj._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_0u9wquj._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_1beudk7._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_1beudk7._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_1fwfloy._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_1fwfloy._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_1nx9wfj._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_1nx9wfj._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_1ovcu65._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_1ovcu65._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_1wtwtga._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_1wtwtga._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_1x4m7r0._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_1x4m7r0._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_app_globals_css_1igg3k2._.single.css` (CSS)
+        - 📄 `.next\dev\static\chunks\src_app_globals_css_1igg3k2._.single.css.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\src_components_1wrjro6._.js` (JavaScript)
+        - 📄 `.next\dev\static\chunks\src_components_1wrjro6._.js.map` (Unknown)
+        - 📄 `.next\dev\static\chunks\turbopack-_08bm286._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\turbopack-pages__app_0e7z0ug._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\dev\static\chunks\turbopack-pages__error_1g3qll_._.js` (JavaScript)
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`
+      - 📁 `.next\dev\static\development/`
+        - 📄 `.next\dev\static\development\_buildManifest.js` (JavaScript)
+        - 📄 `.next\dev\static\development\_clientMiddlewareManifest.js` (JavaScript)
+        - 📄 `.next\dev\static\development\_ssgManifest.js` (JavaScript)
+      - 📁 `.next\dev\static\media/`
+        - 📄 `.next\dev\static\media\53b9e256198e5412-s.390ncx5urfkfu.woff2` (Unknown)
+        - 📄 `.next\dev\static\media\7178b3e590c64307-s.21jp631_3pja2.woff2` (Unknown)
+        - 📄 `.next\dev\static\media\8a480f0b521d4e75-s.1qq4vpdcun5oj.woff2` (Unknown)
+        - 📄 `.next\dev\static\media\caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2` (Unknown)
+        - 📄 `.next\dev\static\media\favicon.2vob68tjqpejf.ico` (Unknown)
+        - 📄 `.next\dev\static\media\fef07dbb0973bf53-s.3p2_lha1f2xer.woff2` (Unknown)
+    - 📁 `.next\dev\types/`
+      - 📄 `.next\dev\types\cache-life.d.ts` (TypeScript)
+        - *Imports:* `next/dist/server/use-cache/cache-tag`
+        - *Exports:* `* from next/dist/server/web/spec-extension/unstable-cache`, `* from next/dist/server/web/spec-extension/revalidate`, `* from next/dist/server/web/spec-extension/unstable-no-store`, `* from next/dist/server/request/io`, `cacheLife`, `cacheLife`, `cacheLife`, `cacheLife`, `cacheLife`, `cacheLife`, `cacheLife`, `cacheLife`, `cacheTag`
+      - 📄 `.next\dev\types\root-params.d.ts` (TypeScript)
+      - 📄 `.next\dev\types\routes.d.ts` (TypeScript)
+        - *Exports:* `AppRoutes`, `PageRoutes`, `LayoutRoutes`, `RedirectRoutes`, `RewriteRoutes`, `ParamMap`
+      - 📄 `.next\dev\types\validator.ts` (TypeScript)
+        - *Imports:* `./routes.js`, `next/types.js`
+    - 📄 `.next\dev\build-manifest.json` (JSON)
+    - 📄 `.next\dev\fallback-build-manifest.json` (JSON)
+    - 📄 `.next\dev\package.json` (JSON)
+    - 📄 `.next\dev\prerender-manifest.json` (JSON)
+    - 📄 `.next\dev\routes-manifest.json` (JSON)
+    - 📄 `.next\dev\trace` (Unknown)
+  - 📁 `.next\diagnostics/`
+    - 📄 `.next\diagnostics\build-diagnostics.json` (JSON)
+    - 📄 `.next\diagnostics\framework.json` (JSON)
+    - 📄 `.next\diagnostics\route-bundle-stats.json` (JSON)
+  - 📁 `.next\server/`
+    - 📁 `.next\server\app/`
+      - 📁 `.next\server\app\_global-error/`
+        - 📁 `.next\server\app\_global-error\page/`
+          - 📄 `.next\server\app\_global-error\page\app-paths-manifest.json` (JSON)
+          - 📄 `.next\server\app\_global-error\page\build-manifest.json` (JSON)
+          - 📄 `.next\server\app\_global-error\page\next-font-manifest.json` (JSON)
+          - 📄 `.next\server\app\_global-error\page\react-loadable-manifest.json` (JSON)
+          - 📄 `.next\server\app\_global-error\page\server-reference-manifest.json` (JSON)
+        - 📄 `.next\server\app\_global-error\page_client-reference-manifest.js` (JavaScript)
+        - 📄 `.next\server\app\_global-error\page.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\app\_global-error\page.js.map` (Unknown)
+        - 📄 `.next\server\app\_global-error\page.js.nft.json` (JSON)
+      - 📁 `.next\server\app\_global-error.segments/`
+        - 📄 `.next\server\app\_global-error.segments\__PAGE__.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\_global-error.segments\_full.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\_global-error.segments\_tree.segment.rsc` (Unknown)
+      - 📁 `.next\server\app\_not-found/`
+        - 📁 `.next\server\app\_not-found\page/`
+          - 📄 `.next\server\app\_not-found\page\app-paths-manifest.json` (JSON)
+          - 📄 `.next\server\app\_not-found\page\build-manifest.json` (JSON)
+          - 📄 `.next\server\app\_not-found\page\next-font-manifest.json` (JSON)
+          - 📄 `.next\server\app\_not-found\page\react-loadable-manifest.json` (JSON)
+          - 📄 `.next\server\app\_not-found\page\server-reference-manifest.json` (JSON)
+        - 📄 `.next\server\app\_not-found\page_client-reference-manifest.js` (JavaScript)
+        - 📄 `.next\server\app\_not-found\page.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\app\_not-found\page.js.map` (Unknown)
+        - 📄 `.next\server\app\_not-found\page.js.nft.json` (JSON)
+      - 📁 `.next\server\app\_not-found.segments/`
+        - 📁 `.next\server\app\_not-found.segments\_not-found/`
+          - 📄 `.next\server\app\_not-found.segments\_not-found\__PAGE__.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\_not-found.segments\_full.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\_not-found.segments\_tree.segment.rsc` (Unknown)
+      - 📁 `.next\server\app\(app)/`
+        - 📁 `.next\server\app\(app)\calendar/`
+          - 📁 `.next\server\app\(app)\calendar\page/`
+            - 📄 `.next\server\app\(app)\calendar\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\calendar\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\calendar\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\calendar\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\calendar\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\calendar\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\calendar\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\calendar\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\calendar\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(app)\dashboard/`
+          - 📁 `.next\server\app\(app)\dashboard\page/`
+            - 📄 `.next\server\app\(app)\dashboard\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\dashboard\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\dashboard\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\dashboard\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\dashboard\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\dashboard\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\dashboard\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\dashboard\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\dashboard\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(app)\history/`
+          - 📁 `.next\server\app\(app)\history\page/`
+            - 📄 `.next\server\app\(app)\history\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\history\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\history\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\history\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\history\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\history\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\history\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\history\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\history\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(app)\nutrition/`
+          - 📁 `.next\server\app\(app)\nutrition\page/`
+            - 📄 `.next\server\app\(app)\nutrition\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\nutrition\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\nutrition\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\nutrition\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\nutrition\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\nutrition\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\nutrition\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\nutrition\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\nutrition\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(app)\progress/`
+          - 📁 `.next\server\app\(app)\progress\page/`
+            - 📄 `.next\server\app\(app)\progress\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\progress\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\progress\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\progress\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\progress\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\progress\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\progress\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\progress\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\progress\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(app)\recovery/`
+          - 📁 `.next\server\app\(app)\recovery\page/`
+            - 📄 `.next\server\app\(app)\recovery\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\recovery\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\recovery\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\recovery\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\recovery\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\recovery\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\recovery\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\recovery\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\recovery\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(app)\settings/`
+          - 📁 `.next\server\app\(app)\settings\page/`
+            - 📄 `.next\server\app\(app)\settings\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\settings\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\settings\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\settings\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\settings\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\settings\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\settings\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\settings\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\settings\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(app)\workout/`
+          - 📁 `.next\server\app\(app)\workout\page/`
+            - 📄 `.next\server\app\(app)\workout\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\workout\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\workout\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\workout\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(app)\workout\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(app)\workout\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(app)\workout\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(app)\workout\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(app)\workout\page.js.nft.json` (JSON)
+      - 📁 `.next\server\app\(auth)/`
+        - 📁 `.next\server\app\(auth)\login/`
+          - 📁 `.next\server\app\(auth)\login\page/`
+            - 📄 `.next\server\app\(auth)\login\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\login\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\login\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\login\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\login\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(auth)\login\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(auth)\login\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(auth)\login\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(auth)\login\page.js.nft.json` (JSON)
+        - 📁 `.next\server\app\(auth)\signup/`
+          - 📁 `.next\server\app\(auth)\signup\page/`
+            - 📄 `.next\server\app\(auth)\signup\page\app-paths-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\signup\page\build-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\signup\page\next-font-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\signup\page\react-loadable-manifest.json` (JSON)
+            - 📄 `.next\server\app\(auth)\signup\page\server-reference-manifest.json` (JSON)
+          - 📄 `.next\server\app\(auth)\signup\page_client-reference-manifest.js` (JavaScript)
+          - 📄 `.next\server\app\(auth)\signup\page.js` (JavaScript)
+            - *Exports:* `module.exports`
+          - 📄 `.next\server\app\(auth)\signup\page.js.map` (Unknown)
+          - 📄 `.next\server\app\(auth)\signup\page.js.nft.json` (JSON)
+      - 📁 `.next\server\app\favicon.ico/`
+        - 📁 `.next\server\app\favicon.ico\route/`
+          - 📄 `.next\server\app\favicon.ico\route\app-paths-manifest.json` (JSON)
+          - 📄 `.next\server\app\favicon.ico\route\build-manifest.json` (JSON)
+        - 📄 `.next\server\app\favicon.ico\route.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\app\favicon.ico\route.js.map` (Unknown)
+        - 📄 `.next\server\app\favicon.ico\route.js.nft.json` (JSON)
+      - 📁 `.next\server\app\index.segments/`
+        - 📄 `.next\server\app\index.segments\__PAGE__.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\index.segments\_full.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\index.segments\_tree.segment.rsc` (Unknown)
+      - 📁 `.next\server\app\login.segments/`
+        - 📁 `.next\server\app\login.segments\!KGF1dGgp/`
+          - 📁 `.next\server\app\login.segments\!KGF1dGgp\login/`
+            - 📄 `.next\server\app\login.segments\!KGF1dGgp\login\__PAGE__.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\login.segments\_full.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\login.segments\_tree.segment.rsc` (Unknown)
+      - 📁 `.next\server\app\page/`
+        - 📄 `.next\server\app\page\app-paths-manifest.json` (JSON)
+        - 📄 `.next\server\app\page\build-manifest.json` (JSON)
+        - 📄 `.next\server\app\page\next-font-manifest.json` (JSON)
+        - 📄 `.next\server\app\page\react-loadable-manifest.json` (JSON)
+        - 📄 `.next\server\app\page\server-reference-manifest.json` (JSON)
+      - 📁 `.next\server\app\signup.segments/`
+        - 📁 `.next\server\app\signup.segments\!KGF1dGgp/`
+          - 📁 `.next\server\app\signup.segments\!KGF1dGgp\signup/`
+            - 📄 `.next\server\app\signup.segments\!KGF1dGgp\signup\__PAGE__.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\signup.segments\_full.segment.rsc` (Unknown)
+        - 📄 `.next\server\app\signup.segments\_tree.segment.rsc` (Unknown)
+      - 📄 `.next\server\app\_global-error.html` (HTML)
+      - 📄 `.next\server\app\_global-error.meta` (Unknown)
+      - 📄 `.next\server\app\_global-error.rsc` (Unknown)
+      - 📄 `.next\server\app\_not-found.html` (HTML)
+      - 📄 `.next\server\app\_not-found.meta` (Unknown)
+      - 📄 `.next\server\app\_not-found.rsc` (Unknown)
+      - 📄 `.next\server\app\favicon.ico.body` (Unknown)
+      - 📄 `.next\server\app\favicon.ico.meta` (Unknown)
+      - 📄 `.next\server\app\index.html` (HTML)
+      - 📄 `.next\server\app\index.meta` (Unknown)
+      - 📄 `.next\server\app\index.rsc` (Unknown)
+      - 📄 `.next\server\app\login.html` (HTML)
+      - 📄 `.next\server\app\login.meta` (Unknown)
+      - 📄 `.next\server\app\login.rsc` (Unknown)
+      - 📄 `.next\server\app\page_client-reference-manifest.js` (JavaScript)
+      - 📄 `.next\server\app\page.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\server\app\page.js.map` (Unknown)
+      - 📄 `.next\server\app\page.js.nft.json` (JSON)
+      - 📄 `.next\server\app\signup.html` (HTML)
+      - 📄 `.next\server\app\signup.meta` (Unknown)
+      - 📄 `.next\server\app\signup.rsc` (Unknown)
+    - 📁 `.next\server\chunks/`
+      - 📁 `.next\server\chunks\ssr/`
+        - 📄 `.next\server\chunks\ssr\_058lm-0._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_058lm-0._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_060hm4p._.js` (JavaScript)
+          - *Exports:* `module.exports`
+          - *Routes Provided:* `GET /`, `GET /`
+        - 📄 `.next\server\chunks\ssr\_060hm4p._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_07uwtoo._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_07uwtoo._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_09j3oom._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_09j3oom._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_0dhhizt._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_0dhhizt._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_0ex0ee4._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_0ex0ee4._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_0nv0gla._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_0nv0gla._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_0p511dl._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_0p511dl._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_0usnrw0._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_0usnrw0._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_0zx9ffd._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_0zx9ffd._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_1tljz_y._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_1tljz_y._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_1y4ig_s._.js` (JavaScript)
+          - *Exports:* `module.exports`
+          - *Routes Provided:* `GET /`, `GET /`
+        - 📄 `.next\server\chunks\ssr\_1y4ig_s._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_1zgoxiz._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_1zgoxiz._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_209l5g6._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_209l5g6._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_20hbakj._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_20hbakj._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app__global-error_page_actions_0zi5s8-.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app__global-error_page_actions_0zi5s8-.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app__not-found_page_actions_0pt47yr.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app__not-found_page_actions_0pt47yr.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_calendar_page_actions_0lto2jq.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_calendar_page_actions_0lto2jq.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_dashboard_page_actions_19--7_-.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_dashboard_page_actions_19--7_-.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_history_page_actions_0ygxaxg.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_history_page_actions_0ygxaxg.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_nutrition_page_actions_1zjla0j.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_nutrition_page_actions_1zjla0j.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_progress_page_actions_0z6yh68.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_progress_page_actions_0z6yh68.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_recovery_page_actions_16o2fk4.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_recovery_page_actions_16o2fk4.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_settings_page_actions_0v01ziu.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_settings_page_actions_0v01ziu.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_workout_page_actions_19eke0w.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(app)_workout_page_actions_19eke0w.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(auth)_login_page_actions_1jr42c1.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(auth)_login_page_actions_1jr42c1.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(auth)_signup_page_actions_0mzh_ty.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_(auth)_signup_page_actions_0mzh_ty.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_page_actions_0hhsz1j.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\_next-internal_server_app_page_actions_0hhsz1j.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__00jtu4o._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__00jtu4o._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__018mor7._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__018mor7._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__01h8rz2._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__01h8rz2._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0eih8y7._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0eih8y7._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0f6s48x._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0f6s48x._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0hq7tm9._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0hq7tm9._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0weu_-x._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0weu_-x._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0wlpy3f._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0wlpy3f._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0y_e9do._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__0y_e9do._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__112w1qf._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__112w1qf._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__11qv6hy._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__11qv6hy._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__13y3p5f._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__13y3p5f._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__15v29kq._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__15v29kq._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__18-pg-c._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__18-pg-c._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1a8qd6h._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1a8qd6h._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1f2jx51._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1f2jx51._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1j3f-vz._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1j3f-vz._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1u9z9di._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\[root-of-the-server]__1u9z9di._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\[turbopack]_runtime.js` (JavaScript)
+          - *Imports:* `worker_threads`, `path`, `url`
+          - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+        - 📄 `.next\server\chunks\ssr\[turbopack]_runtime.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_@base-ui_05xzdun._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_@base-ui_05xzdun._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_@base-ui_1_ls4pq._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_@base-ui_1_ls4pq._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_@tanstack_1nwh2q5._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_@tanstack_1nwh2q5._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_022f2_1._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_022f2_1._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_0e02ftz._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_0e02ftz._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_0pfbswc._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_0pfbswc._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_12z_oi9._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_12z_oi9._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_14hd6mb._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_14hd6mb._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_1dl--zq._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_1dl--zq._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_1g-itpj._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_1g-itpj._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_1om-8yh._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_1om-8yh._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_1wax83z._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_1wax83z._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_1x1sb8e._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_1x1sb8e._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_cn_dist_index_0u5g70v.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_cn_dist_index_0u5g70v.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_0drixxt._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_0drixxt._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_0juh33g._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_0juh33g._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_0kq7z60._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_0kq7z60._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_1n3w9lb._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_1n3w9lb._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_1v8aef8._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_1v8aef8._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_0wpq8j3._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_0wpq8j3._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_builtin_global-error_0q-w892.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_builtin_global-error_0q-w892.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_react-hook-form_dist_index_esm_mjs_0sajker._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_react-hook-form_dist_index_esm_mjs_0sajker._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_recharts_es6_04s96yz._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_recharts_es6_04s96yz._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_recharts_es6_1a9tv74._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_recharts_es6_1a9tv74._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\node_modules_sonner_dist_index_mjs_084dxi0._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\node_modules_sonner_dist_index_mjs_084dxi0._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_0aygbqn._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_0aygbqn._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_0mzk7cz._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_0mzk7cz._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_nutrition_NutritionClient_tsx_1minan9._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_nutrition_NutritionClient_tsx_1minan9._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_progress_ProgressClient_tsx_1m31x5b._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_progress_ProgressClient_tsx_1m31x5b._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_recovery_RecoveryClient_tsx_1nbouq4._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_recovery_RecoveryClient_tsx_1nbouq4._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_workout_WorkoutClient_tsx_1zi2hik._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_app_(app)_workout_WorkoutClient_tsx_1zi2hik._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_app_(auth)_login_page_tsx_15dst5j._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_app_(auth)_login_page_tsx_15dst5j._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_app_(auth)_signup_page_tsx_1y3d5qn._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_app_(auth)_signup_page_tsx_1y3d5qn._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_components_0djj-zk._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_components_0djj-zk._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_components_ui_input_tsx_0o9ns4y._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_components_ui_input_tsx_0o9ns4y._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_components_ui_select_tsx_0m__-6s._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_components_ui_select_tsx_0m__-6s._.js.map` (Unknown)
+        - 📄 `.next\server\chunks\ssr\src_data_program_ts_0noexs6._.js` (JavaScript)
+          - *Exports:* `module.exports`
+        - 📄 `.next\server\chunks\ssr\src_data_program_ts_0noexs6._.js.map` (Unknown)
+      - 📄 `.next\server\chunks\_next-internal_server_app_favicon_ico_route_actions_0g2jjls.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\server\chunks\_next-internal_server_app_favicon_ico_route_actions_0g2jjls.js.map` (Unknown)
+      - 📄 `.next\server\chunks\[externals]__14kfdpf._.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\server\chunks\[externals]__14kfdpf._.js.map` (Unknown)
+      - 📄 `.next\server\chunks\[externals]__1adaq8c._.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\server\chunks\[externals]__1adaq8c._.js.map` (Unknown)
+      - 📄 `.next\server\chunks\[root-of-the-server]__0630y8u._.js` (JavaScript)
+        - *Exports:* `module.exports`
+        - *Routes Provided:* `GET /`, `GET /`, `GET /`, `GET /`
+      - 📄 `.next\server\chunks\[root-of-the-server]__0630y8u._.js.map` (Unknown)
+      - 📄 `.next\server\chunks\[root-of-the-server]__1to-yfd._.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `.next\server\chunks\[root-of-the-server]__1to-yfd._.js.map` (Unknown)
+      - 📄 `.next\server\chunks\[turbopack]_runtime.js` (JavaScript)
+        - *Imports:* `worker_threads`, `path`, `url`
+        - *Exports:* `module.exports`, `module.exports`, `module.exports`, `module.exports`
+      - 📄 `.next\server\chunks\[turbopack]_runtime.js.map` (Unknown)
+    - 📁 `.next\server\middleware/`
+      - 📄 `.next\server\middleware\middleware-manifest.json` (JSON)
+    - 📁 `.next\server\pages/`
+      - 📄 `.next\server\pages\404.html` (HTML)
+      - 📄 `.next\server\pages\500.html` (HTML)
+    - 📄 `.next\server\app-paths-manifest.json` (JSON)
+    - 📄 `.next\server\functions-config-manifest.json` (JSON)
+    - 📄 `.next\server\interception-route-rewrite-manifest.js` (JavaScript)
+    - 📄 `.next\server\middleware-build-manifest.js` (JavaScript)
+    - 📄 `.next\server\middleware-manifest.json` (JSON)
+    - 📄 `.next\server\middleware.js` (JavaScript)
+      - *Exports:* `module.exports`
+    - 📄 `.next\server\middleware.js.map` (Unknown)
+    - 📄 `.next\server\middleware.js.nft.json` (JSON)
+    - 📄 `.next\server\next-font-manifest.js` (JavaScript)
+    - 📄 `.next\server\next-font-manifest.json` (JSON)
+    - 📄 `.next\server\pages-manifest.json` (JSON)
+    - 📄 `.next\server\prefetch-hints.json` (JSON)
+    - 📄 `.next\server\server-reference-manifest.js` (JavaScript)
+    - 📄 `.next\server\server-reference-manifest.json` (JSON)
+  - 📁 `.next\static/`
+    - 📁 `.next\static\chunks/`
+      - 📄 `.next\static\chunks\0_c3v1ejky_6o.js` (JavaScript)
+      - 📄 `.next\static\chunks\0aayyfdqxc_qb.js` (JavaScript)
+      - 📄 `.next\static\chunks\0cz1d0mv5g_q7.js` (JavaScript)
+      - 📄 `.next\static\chunks\0fffl7l9gfvhu.js` (JavaScript)
+      - 📄 `.next\static\chunks\0fzr4hlrqjqgv.js` (JavaScript)
+      - 📄 `.next\static\chunks\0j9h255stbcqz.js` (JavaScript)
+      - 📄 `.next\static\chunks\0lf1tpbyxg2qk.js` (JavaScript)
+      - 📄 `.next\static\chunks\121uqbgslt_j2.js` (JavaScript)
+      - 📄 `.next\static\chunks\19smmg9p9zlqv.js` (JavaScript)
+      - 📄 `.next\static\chunks\1b697_bvtl724.js` (JavaScript)
+        - *Routes Provided:* `GET /`, `GET /`
+      - 📄 `.next\static\chunks\1mh6a-0e61pyc.js` (JavaScript)
+      - 📄 `.next\static\chunks\1o_vept466cnu.js` (JavaScript)
+      - 📄 `.next\static\chunks\1po7tvgxdvoux.js` (JavaScript)
+      - 📄 `.next\static\chunks\1tu-vq6t1jjvj.js` (JavaScript)
+      - 📄 `.next\static\chunks\1wvfg-ub2jt3i.js` (JavaScript)
+      - 📄 `.next\static\chunks\1xwiee830xbwf.js` (JavaScript)
+      - 📄 `.next\static\chunks\2e467qf61luh8.js` (JavaScript)
+      - 📄 `.next\static\chunks\2i51e627rllld.js` (JavaScript)
+      - 📄 `.next\static\chunks\2mvq0sfw8envs.js` (JavaScript)
+      - 📄 `.next\static\chunks\2ro6543i-bvmm.js` (JavaScript)
+      - 📄 `.next\static\chunks\2yn_uji5ed-o8.css` (CSS)
+      - 📄 `.next\static\chunks\2zknf_zs2k2cd.js` (JavaScript)
+      - 📄 `.next\static\chunks\33t5sxauh846h.js` (JavaScript)
+      - 📄 `.next\static\chunks\380vi2nnalsng.js` (JavaScript)
+      - 📄 `.next\static\chunks\3fntmmi971322.js` (JavaScript)
+      - 📄 `.next\static\chunks\3idzorjti_san.js` (JavaScript)
+      - 📄 `.next\static\chunks\3m8-m5eqi8av2.js` (JavaScript)
+      - 📄 `.next\static\chunks\3mc6dra1m0098.js` (JavaScript)
+      - 📄 `.next\static\chunks\3ndmyouwzzb8q.js` (JavaScript)
+      - 📄 `.next\static\chunks\3oomdb05clr54.js` (JavaScript)
+      - 📄 `.next\static\chunks\3typ0vh-1ghtp.js` (JavaScript)
+      - 📄 `.next\static\chunks\3y1mfk9k8_dw-.js` (JavaScript)
+      - 📄 `.next\static\chunks\40gi9mstabcbj.js` (JavaScript)
+      - 📄 `.next\static\chunks\turbopack-426nb5t_smv6k.js` (JavaScript)
+    - 📁 `.next\static\media/`
+      - 📄 `.next\static\media\53b9e256198e5412-s.390ncx5urfkfu.woff2` (Unknown)
+      - 📄 `.next\static\media\7178b3e590c64307-s.21jp631_3pja2.woff2` (Unknown)
+      - 📄 `.next\static\media\8a480f0b521d4e75-s.1qq4vpdcun5oj.woff2` (Unknown)
+      - 📄 `.next\static\media\caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2` (Unknown)
+      - 📄 `.next\static\media\favicon.2vob68tjqpejf.ico` (Unknown)
+      - 📄 `.next\static\media\fef07dbb0973bf53-s.3p2_lha1f2xer.woff2` (Unknown)
+    - 📁 `.next\static\SvyCFCpUkshnvo5XBe-mI/`
+      - 📄 `.next\static\SvyCFCpUkshnvo5XBe-mI\_buildManifest.js` (JavaScript)
+      - 📄 `.next\static\SvyCFCpUkshnvo5XBe-mI\_clientMiddlewareManifest.js` (JavaScript)
+      - 📄 `.next\static\SvyCFCpUkshnvo5XBe-mI\_ssgManifest.js` (JavaScript)
   - 📁 `.next\types/`
     - 📄 `.next\types\cache-life.d.ts` (TypeScript)
       - *Imports:* `next/dist/server/use-cache/cache-tag`
@@ -14,6 +1468,22 @@ This file maintains an up-to-date list of project files and structure.
       - *Exports:* `AppRoutes`, `PageRoutes`, `LayoutRoutes`, `RedirectRoutes`, `RewriteRoutes`, `ParamMap`
     - 📄 `.next\types\validator.ts` (TypeScript)
       - *Imports:* `./routes.js`, `next/types.js`
+  - 📄 `.next\app-path-routes-manifest.json` (JSON)
+  - 📄 `.next\BUILD_ID` (Unknown)
+  - 📄 `.next\build-manifest.json` (JSON)
+  - 📄 `.next\export-marker.json` (JSON)
+  - 📄 `.next\fallback-build-manifest.json` (JSON)
+  - 📄 `.next\images-manifest.json` (JSON)
+  - 📄 `.next\next-minimal-server.js.nft.json` (JSON)
+  - 📄 `.next\next-server.js.nft.json` (JSON)
+  - 📄 `.next\package.json` (JSON)
+  - 📄 `.next\prerender-manifest.json` (JSON)
+  - 📄 `.next\required-server-files.js` (JavaScript)
+  - 📄 `.next\required-server-files.json` (JSON)
+  - 📄 `.next\routes-manifest.json` (JSON)
+  - 📄 `.next\trace` (Unknown)
+  - 📄 `.next\trace-build` (Unknown)
+  - 📄 `.next\turbopack` (Unknown)
 - 📁 `.vscode/`
   - 📄 `.vscode\project-structure.md` (Markdown)
 - 📁 `public/`
@@ -79,7 +1549,7 @@ This file maintains an up-to-date list of project files and structure.
           - *Imports:* `@/lib/supabase/server`, `next/navigation`, `./WorkoutClient`, `@/data/program`
           - *Exports:* `WorkoutPage`
         - 📄 `src\app\(app)\workout\WorkoutClient.tsx` (React TypeScript)
-          - *Imports:* `react`, `@/data/program`, `@/types`, `@/lib/services/workouts`, `@/lib/calculations`, `@/components/ui/card`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/badge`, `@/components/ui/tabs`, `sonner`, `lucide-react`
+          - *Imports:* `react`, `@/data/program`, `@/types`, `@/lib/services/workouts`, `@/lib/calculations`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/badge`, `sonner`, `lucide-react`
           - *Exports:* `WorkoutClient`
       - 📄 `src\app\(app)\layout.tsx` (React TypeScript)
         - *Imports:* `@/components/layout/Sidebar`, `@/components/layout/BottomNav`
@@ -91,7 +1561,7 @@ This file maintains an up-to-date list of project files and structure.
           - *Exports:* `LoginPage`
       - 📁 `src\app\(auth)\signup/`
         - 📄 `src\app\(auth)\signup\page.tsx` (React TypeScript)
-          - *Imports:* `react`, `next/navigation`, `next/link`, `react-hook-form`, `@hookform/resolvers/zod`, `zod`, `@/lib/services/auth`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/label`, `@/components/ui/card`, `sonner`
+          - *Imports:* `react`, `next/navigation`, `next/link`, `react-hook-form`, `@hookform/resolvers/zod`, `zod`, `@/lib/supabase/client`, `@/components/ui/button`, `@/components/ui/input`, `@/components/ui/label`, `@/components/ui/card`, `sonner`
           - *Exports:* `SignupPage`
       - 📄 `src\app\(auth)\layout.tsx` (React TypeScript)
         - *Imports:* `lucide-react`
@@ -188,7 +1658,7 @@ This file maintains an up-to-date list of project files and structure.
     - 📁 `src\lib\services/`
       - 📄 `src\lib\services\auth.ts` (TypeScript)
         - *Imports:* `@/lib/supabase/client`
-        - *Exports:* `signUp`, `signIn`, `signOut`, `resetPassword`, `getUser`
+        - *Exports:* `signIn`, `signOut`, `resetPassword`, `getUser`
       - 📄 `src\lib\services\data.ts` (TypeScript)
         - *Imports:* `@/lib/supabase/client`, `@/types`
         - *Exports:* `getWeightLogs`, `upsertWeightLog`, `getNutritionLogs`, `getNutritionLogByDate`, `upsertNutritionLog`, `getRecoveryLogs`, `getRecoveryLogByDate`, `upsertRecoveryLog`, `getProfile`, `upsertProfile`, `getSettings`, `upsertSettings`
@@ -210,9 +1680,9 @@ This file maintains an up-to-date list of project files and structure.
       - *Exports:* `* from cn`
   - 📁 `src\types/`
     - 📄 `src\types\index.ts` (TypeScript)
-  - 📄 `src\middleware.ts` (TypeScript)
+  - 📄 `src\proxy.ts` (TypeScript)
     - *Imports:* `next/server`, `@/lib/supabase/middleware`
-    - *Exports:* `middleware`
+    - *Exports:* `proxy`
 - 📄 `.env.local` (Unknown)
 - 📄 `.gitignore` (Unknown)
 - 📄 `AGENTS.md` (Markdown)
@@ -220,16 +1690,18 @@ This file maintains an up-to-date list of project files and structure.
 - 📄 `components.json` (JSON)
 - 📄 `eslint.config.mjs` (Unknown)
 - 📄 `next-env.d.ts` (TypeScript)
-  - *Imports:* `./.next/types/routes.d.ts`, `./.next/types/root-params.d.ts`
+  - *Imports:* `./.next/dev/types/routes.d.ts`, `./.next/dev/types/root-params.d.ts`
 - 📄 `next.config.ts` (TypeScript)
   - *Imports:* `next`
 - 📄 `package-lock.json` (JSON)
 - 📄 `package.json` (JSON)
 - 📄 `postcss.config.mjs` (Unknown)
 - 📄 `README.md` (Markdown)
+- 📄 `supabase-fix-trigger.sql` (Unknown)
+- 📄 `supabase-fix-workout.sql` (Unknown)
 - 📄 `supabase-schema.sql` (Unknown)
 - 📄 `tsconfig.json` (JSON)
 - 📄 `tsconfig.tsbuildinfo` (Unknown)
 
 ---
-Last updated: 2026-09-09T05:41:23.609Z
+Last updated: 2026-09-10T05:28:42.994Z

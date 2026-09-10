@@ -7,6 +7,9 @@ export default async function RecoveryPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
+  const today = new Date().toISOString().split('T')[0]
+  const todayFormatted = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' })
+
   const { data: logs } = await supabase
     .from('recovery_logs')
     .select('*')
@@ -14,5 +17,5 @@ export default async function RecoveryPage() {
     .order('date', { ascending: false })
     .limit(30)
 
-  return <RecoveryClient userId={user.id} logs={logs ?? []} />
+  return <RecoveryClient userId={user.id} today={today} todayFormatted={todayFormatted} logs={logs ?? []} />
 }

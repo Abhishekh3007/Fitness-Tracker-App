@@ -3,29 +3,29 @@ import type { ExerciseLog, CardioLog } from '@/types'
 
 export async function getWorkoutSessions(userId: string, limit = 30) {
   const supabase = createClient()
-  return supabase
+  const { data, error } = await supabase
     .from('workout_sessions')
     .select('*')
     .eq('user_id', userId)
     .order('date', { ascending: false })
     .limit(limit)
+  if (error) console.error('getWorkoutSessions:', error.message)
+  return { data: data ?? [], error }
 }
 
 export async function getWorkoutSessionByDate(userId: string, date: string) {
   const supabase = createClient()
-  return supabase
+  const { data, error } = await supabase
     .from('workout_sessions')
     .select('*')
     .eq('user_id', userId)
     .eq('date', date)
     .maybeSingle()
+  if (error) console.error('getWorkoutSessionByDate:', error.message)
+  return { data, error }
 }
 
-export async function createWorkoutSession(
-  userId: string,
-  programDayId: number,
-  date: string
-) {
+export async function createWorkoutSession(userId: string, programDayId: number, date: string) {
   const supabase = createClient()
   const { data, error } = await supabase
     .from('workout_sessions')
@@ -38,60 +38,83 @@ export async function createWorkoutSession(
     })
     .select()
     .single()
-  if (error) console.error('createWorkoutSession error:', error)
+  if (error) console.error('createWorkoutSession:', error.message)
   return { data, error }
 }
 
-export async function completeWorkoutSession(sessionId: string, notes?: string) {
+export async function completeWorkoutSession(sessionId: string, durationSeconds: number, notes?: string) {
   const supabase = createClient()
-  return supabase
+  const { data, error } = await supabase
     .from('workout_sessions')
-    .update({ status: 'completed', completed_at: new Date().toISOString(), notes })
+    .update({
+      status: 'completed',
+      completed_at: new Date().toISOString(),
+      duration: Math.floor(durationSeconds / 60),
+      notes: notes ?? null,
+    })
     .eq('id', sessionId)
     .select()
     .single()
+  if (error) console.error('completeWorkoutSession:', error.message)
+  return { data, error }
 }
 
 export async function getExerciseLogs(sessionId: string) {
   const supabase = createClient()
-  return supabase
+  const { data, error } = await supabase
     .from('exercise_logs')
     .select('*')
     .eq('workout_session_id', sessionId)
     .order('set_number')
+  if (error) console.error('getExerciseLogs:', error.message)
+  return { data: data ?? [], error }
 }
 
 export async function upsertExerciseLog(
   log: Partial<ExerciseLog> & { workout_session_id: string; exercise_name: string; set_number: number }
 ) {
   const supabase = createClient()
-  // Remove program_exercise_id if empty string — it's optional
-  const payload = { ...log }
+  // Strip empty optional FK
+  const payload: Record<string, unknown> = { ...log }
   if (!payload.program_exercise_id) delete payload.program_exercise_id
-  if (payload.id) {
-    return supabase.from('exercise_logs').update(payload).eq('id', payload.id).select().single()
-  }
-  return supabase.from('exercise_logs').insert(payload).select().single()
+  if (!payload.id) delete payload.id
+
+  const { data, error } = payload.id
+    ? await supabase.from('exercise_logs').update(payload).eq('id', payload.id as string).select().single()
+    : await supabase.from('exercise_logs').insert(payload).select().single()
+
+  if (error) console.error('upsertExerciseLog:', error.message)
+  return { data, error }
 }
 
 export async function upsertCardioLog(
   log: Partial<CardioLog> & { workout_session_id: string; cardio_type: string }
 ) {
   const supabase = createClient()
-  if (log.id) {
-    return supabase.from('cardio_logs').update(log).eq('id', log.id).select().single()
-  }
-  return supabase.from('cardio_logs').insert(log).select().single()
+  const payload: Record<string, unknown> = { ...log }
+  if (!payload.id) delete payload.id
+
+  const { data, error } = payload.id
+    ? await supabase.from('cardio_logs').update(payload).eq('id', payload.id as string).select().single()
+    : await supabase.from('cardio_logs').insert(payload).select().single()
+
+  if (error) console.error('upsertCardioLog:', error.message)
+  return { data, error }
 }
 
 export async function getCardioLogs(sessionId: string) {
   const supabase = createClient()
-  return supabase.from('cardio_logs').select('*').eq('workout_session_id', sessionId)
+  const { data, error } = await supabase
+    .from('cardio_logs')
+    .select('*')
+    .eq('workout_session_id', sessionId)
+  if (error) console.error('getCardioLogs:', error.message)
+  return { data: data ?? [], error }
 }
 
 export async function getLastSessionForDay(userId: string, programDayId: number) {
   const supabase = createClient()
-  return supabase
+  const { data, error } = await supabase
     .from('workout_sessions')
     .select('*, exercise_logs(*)')
     .eq('user_id', userId)
@@ -100,17 +123,41 @@ export async function getLastSessionForDay(userId: string, programDayId: number)
     .order('date', { ascending: false })
     .limit(1)
     .maybeSingle()
+  if (error) console.error('getLastSessionForDay:', error.message)
+  return { data, error }
 }
 
-export async function getExerciseHistory(userId: string, exerciseName: string, limit = 10) {
+export async function getExerciseHistory(userId: string, exerciseName: string) {
   const supabase = createClient()
-  return supabase
+  // Get sessions for this user, then join exercise_logs
+  const { data: sessions, error: sErr } = await supabase
+    .from('workout_sessions')
+    .select('id, date')
+    .eq('user_id', userId)
+    .eq('status', 'completed')
+    .order('date', { ascending: false })
+    .limit(20)
+
+  if (sErr || !sessions?.length) return { data: [], error: sErr }
+
+  const sessionIds = sessions.map((s) => s.id)
+  const { data, error } = await supabase
     .from('exercise_logs')
-    .select('*, workout_sessions!inner(user_id, date)')
-    .eq('workout_sessions.user_id', userId)
+    .select('*')
+    .in('workout_session_id', sessionIds)
     .eq('exercise_name', exerciseName)
-    .order('created_at', { ascending: false })
-    .limit(limit * 10)
+    .eq('completed', true)
+    .order('created_at', { ascending: true })
+
+  if (error) console.error('getExerciseHistory:', error.message)
+
+  // Attach date from sessions
+  const sessionMap = new Map(sessions.map((s) => [s.id, s.date]))
+  const enriched = (data ?? []).map((log) => ({
+    ...log,
+    date: sessionMap.get(log.workout_session_id) ?? '',
+  }))
+  return { data: enriched, error }
 }
 
 export async function getWorkoutStreak(userId: string): Promise<number> {
@@ -123,20 +170,19 @@ export async function getWorkoutStreak(userId: string): Promise<number> {
     .order('date', { ascending: false })
     .limit(60)
 
-  if (!data || data.length === 0) return 0
+  if (!data?.length) return 0
 
-  const dates = data.map((r) => r.date).sort().reverse()
+  const unique = [...new Set(data.map((r) => r.date))].sort().reverse()
   let streak = 0
-  const today = new Date().toISOString().split('T')[0]
-  let current = today
+  let cur = new Date().toISOString().split('T')[0]
 
-  for (const date of dates) {
-    if (date === current) {
+  for (const date of unique) {
+    if (date === cur) {
       streak++
-      const d = new Date(current)
+      const d = new Date(cur)
       d.setDate(d.getDate() - 1)
-      current = d.toISOString().split('T')[0]
-    } else if (date < current) {
+      cur = d.toISOString().split('T')[0]
+    } else if (date < cur) {
       break
     }
   }

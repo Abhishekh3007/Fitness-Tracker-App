@@ -24,10 +24,14 @@ const schema = z.object({
 })
 type FormData = z.infer<typeof schema>
 
-interface Props { userId: string; logs: RecoveryLog[] }
+interface Props {
+  userId: string
+  today: string
+  todayFormatted: string
+  logs: RecoveryLog[]
+}
 
-export function RecoveryClient({ userId, logs }: Props) {
-  const today = new Date().toISOString().split('T')[0]
+export function RecoveryClient({ userId, today, todayFormatted, logs }: Props) {
   const todayLog = logs.find((l) => l.date === today)
   const [allLogs, setAllLogs] = useState(logs)
   const [saving, setSaving] = useState(false)
@@ -46,17 +50,17 @@ export function RecoveryClient({ userId, logs }: Props) {
 
   const values = watch()
   const radarData = [
-    { metric: 'Sleep Quality', value: values.sleep_quality ?? 0 },
+    { metric: 'Sleep', value: values.sleep_quality ?? 0 },
     { metric: 'Energy', value: values.energy ?? 0 },
-    { metric: 'Low Soreness', value: values.soreness ? 10 - values.soreness + 1 : 0 },
-    { metric: 'Low Stress', value: values.stress ? 10 - values.stress + 1 : 0 },
+    { metric: 'Recovery', value: values.soreness ? 11 - values.soreness : 0 },
+    { metric: 'Calm', value: values.stress ? 11 - values.stress : 0 },
   ]
 
   async function onSubmit(data: FormData) {
     setSaving(true)
     const { error, data: saved } = await upsertRecoveryLog({ user_id: userId, date: today, ...data })
     setSaving(false)
-    if (error) { toast.error('Failed to save'); return }
+    if (error) { toast.error(error.message); return }
     toast.success('Recovery logged!')
     if (saved) setAllLogs((prev) => [saved, ...prev.filter((l) => l.date !== today)])
   }
@@ -85,9 +89,7 @@ export function RecoveryClient({ userId, logs }: Props) {
       <div className="grid md:grid-cols-2 gap-6">
         <Card className="bg-zinc-900 border-zinc-800">
           <CardHeader>
-            <CardTitle className="text-white text-base">
-              Today — {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' })}
-            </CardTitle>
+            <CardTitle className="text-white text-base">Today — {todayFormatted}</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
@@ -103,7 +105,7 @@ export function RecoveryClient({ userId, logs }: Props) {
                 <Input {...register('notes')} className="bg-zinc-800 border-zinc-700" placeholder="How are you feeling?" />
               </div>
               <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white" disabled={saving}>
-                {saving ? 'Saving…' : 'Save Today'}
+                {saving ? 'Saving…' : todayLog ? 'Update Today' : 'Save Today'}
               </Button>
             </form>
           </CardContent>
@@ -135,9 +137,9 @@ export function RecoveryClient({ userId, logs }: Props) {
                 <div key={log.id} className="flex items-center justify-between py-2 border-b border-zinc-800 last:border-0">
                   <span className="text-sm text-zinc-400">{log.date}</span>
                   <div className="flex gap-3 text-xs">
-                    {log.sleep_hours && <span className="text-indigo-400">{log.sleep_hours}h sleep</span>}
-                    {log.energy && <span className="text-yellow-400">Energy {log.energy}/10</span>}
-                    {log.soreness && <span className="text-red-400">Soreness {log.soreness}/10</span>}
+                    {log.sleep_hours != null && <span className="text-indigo-400">{log.sleep_hours}h</span>}
+                    {log.energy != null && <span className="text-yellow-400">Energy {log.energy}/10</span>}
+                    {log.soreness != null && <span className="text-red-400">Soreness {log.soreness}/10</span>}
                   </div>
                 </div>
               ))}
