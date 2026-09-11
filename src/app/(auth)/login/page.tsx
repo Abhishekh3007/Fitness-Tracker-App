@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { signIn, resetPassword } from '@/lib/services/auth'
+import { signIn, signInWithGoogle, resetPassword } from '@/lib/services/auth'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -32,6 +32,15 @@ export default function LoginPage() {
     setLoading(false)
     if (error) { toast.error(error.message); return }
     router.push('/dashboard')
+  }
+
+  async function handleGoogleSignIn() {
+    setLoading(true)
+    const { error } = await signInWithGoogle()
+    if (error) {
+      setLoading(false)
+      toast.error(error.message)
+    }
   }
 
   async function handleForgotPassword() {
@@ -64,6 +73,9 @@ export default function LoginPage() {
           </div>
           <Button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white" disabled={loading}>
             {loading ? 'Signing in…' : 'Sign In'}
+          </Button>
+          <Button type="button" variant="outline" className="w-full border-zinc-700 bg-zinc-800 text-white hover:bg-zinc-700" onClick={handleGoogleSignIn} disabled={loading}>
+            Continue with Google
           </Button>
           <div className="flex justify-between text-sm">
             <button type="button" onClick={handleForgotPassword}

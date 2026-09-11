@@ -5,6 +5,16 @@ export async function signIn(email: string, password: string) {
   return supabase.auth.signInWithPassword({ email, password })
 }
 
+export async function signInWithGoogle() {
+  const supabase = createClient()
+  return supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: {
+      redirectTo: `${window.location.origin}/auth/callback`,
+    },
+  })
+}
+
 export async function signOut() {
   const supabase = createClient()
   return supabase.auth.signOut()
