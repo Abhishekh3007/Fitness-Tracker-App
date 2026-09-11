@@ -179,7 +179,7 @@ export function WorkoutClient({ userId, initialDay, allDays }: Props) {
 
   async function handleFinish() {
     if (!sessionId) return
-    await completeWorkoutSession(sessionId, workoutNotes || undefined)
+    await completeWorkoutSession(sessionId, elapsed, workoutNotes || undefined)
     setScreen('complete')
     toast.success('Workout saved!')
   }

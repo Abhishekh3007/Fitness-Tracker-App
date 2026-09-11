@@ -39,14 +39,14 @@ export function HistoryClient({ userId, sessions }: Props) {
   const filters = ['all', 'Push', 'Pull', 'Legs', 'Strength', 'Hypertrophy']
 
   const filtered = sessions.filter((s) => {
-    const day = PROGRAM_DAYS.find((d) => d.day_number.toString() === s.program_day_id)
+    const day = PROGRAM_DAYS.find((d) => d.day_number === s.program_day_id)
     if (filter !== 'all' && day && !day.training_type.includes(filter)) return false
     if (search && day && !day.day_name.toLowerCase().includes(search.toLowerCase())) return false
     return true
   })
 
   function getDayInfo(session: WorkoutSession) {
-    return PROGRAM_DAYS.find((d) => d.day_number.toString() === session.program_day_id)
+    return PROGRAM_DAYS.find((d) => d.day_number === session.program_day_id)
   }
 
   function formatDuration(s: WorkoutSession) {
