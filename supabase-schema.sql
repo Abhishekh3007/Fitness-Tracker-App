@@ -13,6 +13,7 @@ create table if not exists profiles (
   starting_weight numeric,
   target_weight numeric,
   current_weight numeric,
+  goal text default 'fat_loss' check (goal in ('fat_loss', 'muscle_gain', 'maintenance')),
   preferred_units text default 'kg' check (preferred_units in ('kg', 'lbs')),
   created_at timestamptz default now(),
   updated_at timestamptz default now()
